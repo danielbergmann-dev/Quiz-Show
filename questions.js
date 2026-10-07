@@ -96,3 +96,427 @@ add('simon',2,[
 ], 'https://adventuregamers.com/walkthroughs/simon-the-sorcerer-2');
 
 BANK.forEach(q=>{if(q.cat==='simon' && q.tier===2 && /Erz|Holzfäller|Holzart|Truhe|Eintopf/.test(q.q)) q.source='https://adventuregamers.com/walkthroughs/simon-the-sorcerer1';});
+
+// Expert-only pool: correct answer first; never mixed into classic rounds.
+const HARD_BANK=[
+  {
+    "id": "hard-0",
+    "cat": "lucas",
+    "tier": 0,
+    "q": "Monkey Island 2, schwerer Modus: Was dient Captain Dread als Ersatz für seine verlorene Glückskette?",
+    "answers": [
+      "Wallys Monokel",
+      "Largos Toupet",
+      "Ein goldener Ohrring",
+      "Eine Leuchtturmlinse"
+    ],
+    "note": "Dread akzeptiert Wallys Monokel.",
+    "source": "https://www.hubbe.net/~/hubbe/monkey2.html"
+  },
+  {
+    "id": "hard-1",
+    "cat": "lucas",
+    "tier": 0,
+    "q": "Day of the Tentacle: Welche drei Stoffe braucht Red Edison für seine Batterie?",
+    "answers": [
+      "Öl, Essig und Gold",
+      "Öl, Wein und Silber",
+      "Wasser, Salz und Gold",
+      "Essig, Quecksilber und Kupfer"
+    ],
+    "note": "Red benötigt Öl, Essig und Gold.",
+    "source": "https://www.swordsandsoftware.com/dott.php"
+  },
+  {
+    "id": "hard-2",
+    "cat": "lucas",
+    "tier": 0,
+    "q": "Monkey Island 2, schwerer Modus: Womit stellt Guybrush die Pumpe am Wasserfall ab?",
+    "answers": [
+      "Mit dem Affen Jojo",
+      "Mit einem verbogenen Nagel",
+      "Mit Stans Gehstock",
+      "Mit einer Sargkurbel"
+    ],
+    "note": "Jojo wird als lebender Schraubenschlüssel eingesetzt.",
+    "source": "https://www.hubbe.net/~/hubbe/monkey2.html"
+  },
+  {
+    "id": "hard-3",
+    "cat": "lucas",
+    "tier": 1,
+    "q": "Day of the Tentacle: Wer nimmt Hoagies Weinflasche für die Zeitkapsel entgegen?",
+    "answers": [
+      "Thomas Jefferson",
+      "Benjamin Franklin",
+      "George Washington",
+      "John Hancock"
+    ],
+    "note": "Jefferson verwahrt den Wein in seiner Zeitkapsel.",
+    "source": "https://www.swordsandsoftware.com/dott.php"
+  },
+  {
+    "id": "hard-4",
+    "cat": "lucas",
+    "tier": 1,
+    "q": "Monkey Island 2, schwerer Modus: Was tauscht der Antiquitätenhändler gegen sein Kartenstück ein?",
+    "answers": [
+      "Die Galionsfigur der Mad Monkey",
+      "Den Pokal des Spuckwettbewerbs",
+      "Die Leuchtturmlinse",
+      "Das Fernrohr aus dem Baumhaus"
+    ],
+    "note": "Die gesuchte Galionsfigur stammt vom Wrack der Mad Monkey.",
+    "source": "https://www.hubbe.net/~/hubbe/monkey2.html"
+  },
+  {
+    "id": "hard-5",
+    "cat": "lucas",
+    "tier": 1,
+    "q": "Day of the Tentacle: Was wirft Hoagie in den Vorschlagskasten für die Verfassung?",
+    "answers": [
+      "Eine Staubsaugerwerbung",
+      "Einen Batteriebauplan",
+      "Einen Hotelprospekt",
+      "Eine Zigarrenwerbung"
+    ],
+    "note": "Die Werbung macht Staubsauger zur gesetzlichen Pflicht.",
+    "source": "https://www.swordsandsoftware.com/dott.php"
+  },
+  {
+    "id": "hard-6",
+    "cat": "lucas",
+    "tier": 2,
+    "q": "Monkey Island 2, schwerer Modus: Welche Regel löst das Fingerspiel vor dem Glücksspielraum?",
+    "answers": [
+      "Die zuerst gezeigten Finger zählen",
+      "Die zuletzt gezeigten Finger zählen",
+      "Beide Fingerzahlen addieren",
+      "Die genannte Zahl verdoppeln"
+    ],
+    "note": "Entscheidend ist die zuerst gezeigte Fingerzahl.",
+    "source": "https://www.hubbe.net/~/hubbe/monkey2.html"
+  },
+  {
+    "id": "hard-7",
+    "cat": "lucas",
+    "tier": 2,
+    "q": "Monkey Island 2, schwerer Modus: Was muss Guybrush für den wiederbelebten Toten am Strand erledigen?",
+    "answers": [
+      "Den Herd in dessen Hütte abstellen",
+      "Das Fenster der Hütte schließen",
+      "Den Papagei füttern",
+      "Die Hütte abschließen"
+    ],
+    "note": "Erst nach dem Abstellen des Herds erhält Guybrush das Kartenstück.",
+    "source": "https://www.hubbe.net/~/hubbe/monkey2.html"
+  },
+  {
+    "id": "hard-8",
+    "cat": "lucas",
+    "tier": 2,
+    "q": "Monkey Island 2, schwerer Modus: Welche Kombination weist im Haus hinter dem Wasserfall den richtigen Ziegel?",
+    "answers": [
+      "Fernrohr, Statue und Spiegel",
+      "Monokel, Kerze und Fenster",
+      "Linse, Kompass und Spiegel",
+      "Fernrohr, Laterne und Uhr"
+    ],
+    "note": "Das Fernrohr in der Statue lenkt Licht über den Spiegel.",
+    "source": "https://www.hubbe.net/~/hubbe/monkey2.html"
+  },
+  {
+    "id": "hard-9",
+    "cat": "lucas",
+    "tier": 2,
+    "q": "Day of the Tentacle: Wie heißt die Weinflasche, aus der später Essig wird?",
+    "answers": [
+      "Chateau de Cheapaux 1775",
+      "Chateau de Tentacle 1789",
+      "Chateau Edison 1800",
+      "Chateau de Chrono 1776"
+    ],
+    "note": "Das Etikett lautet Chateau de Cheapaux 1775.",
+    "source": "https://gamefaqs.gamespot.com/pc/564903-maniac-mansion-day-of-the-tentacle/faqs/51983"
+  },
+  {
+    "id": "hard-10",
+    "cat": "simon",
+    "tier": 0,
+    "q": "Simon 1: Womit bringt Simon das Sousaphon des Musikers zum Verstummen?",
+    "answers": [
+      "Mit einer Wassermelone",
+      "Mit Bienenwachs",
+      "Mit einem Wollknäuel",
+      "Mit Sumpfeintopf"
+    ],
+    "note": "Simon verstopft das Instrument mit einer Wassermelone.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer1"
+  },
+  {
+    "id": "hard-11",
+    "cat": "simon",
+    "tier": 0,
+    "q": "Simon 1: Womit verstopft Simon den Zapfhahn des Bierfasses?",
+    "answers": [
+      "Bienenwachs",
+      "Baumharz",
+      "Lehm",
+      "Käse"
+    ],
+    "note": "Das Wachs täuscht dem Wirt ein leeres Fass vor.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer1"
+  },
+  {
+    "id": "hard-12",
+    "cat": "simon",
+    "tier": 0,
+    "q": "Simon 2: Welches Werkzeug erhält Simon nach der Rechenhilfe beim Eisenhändler?",
+    "answers": [
+      "Ein Brecheisen für Linkshänder",
+      "Eine Säge für Linkshänder",
+      "Einen Hammer ohne Stiel",
+      "Einen rostigen Schraubenschlüssel"
+    ],
+    "note": "Die Belohnung ist ein Linkshänder-Brecheisen.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer-2"
+  },
+  {
+    "id": "hard-13",
+    "cat": "simon",
+    "tier": 1,
+    "q": "Simon 1: Womit schiebt Simon den Schlüssel im Goblinlager aus dem Schloss?",
+    "answers": [
+      "Mit einem Rattenknochen",
+      "Mit einer Feder",
+      "Mit einem Nagel",
+      "Mit einem Kletterhaken"
+    ],
+    "note": "Ein Rattenknochen drückt den Schlüssel heraus.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer1"
+  },
+  {
+    "id": "hard-14",
+    "cat": "simon",
+    "tier": 1,
+    "q": "Simon 2: Was trägt Simon, um als Mitglied in die verrückte Gesellschaft aufgenommen zu werden?",
+    "answers": [
+      "Haferbrei",
+      "Eine goldene Perücke",
+      "Einen Schlauch als Gürtel",
+      "Einen umgedrehten Kessel"
+    ],
+    "note": "Die Gesellschaft hat eine Stelle für einen Breiträger frei.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer-2"
+  },
+  {
+    "id": "hard-15",
+    "cat": "simon",
+    "tier": 1,
+    "q": "Simon 2: Wessen Brief legt Simon im Kreditbüro in den Eingangskorb?",
+    "answers": [
+      "Den der drei Bären",
+      "Den von Calypso",
+      "Den des Eisenhändlers",
+      "Den von Goldlöckchen"
+    ],
+    "note": "Dadurch schickt das Büro seine Abrissleute zu den Bären.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer-2"
+  },
+  {
+    "id": "hard-16",
+    "cat": "simon",
+    "tier": 2,
+    "q": "Simon 1: Womit kitzelt Simon den schnarchenden Zwerg, um an den Schlüssel zu kommen?",
+    "answers": [
+      "Mit einer Feder",
+      "Mit einem Grashalm",
+      "Mit einem Rattenknochen",
+      "Mit einem Pinsel"
+    ],
+    "note": "Die Feder bringt den Zwerg dazu, den Schlüssel freizugeben.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer1"
+  },
+  {
+    "id": "hard-17",
+    "cat": "simon",
+    "tier": 2,
+    "q": "Simon 2: Wie heißt der Akkordeonspieler, den der geworfene Baseballschläger trifft?",
+    "answers": [
+      "Malcolm",
+      "Cedric",
+      "Mortimer",
+      "Roderick"
+    ],
+    "note": "Der bisherige Tanzlehrer heißt Malcolm.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer-2"
+  },
+  {
+    "id": "hard-18",
+    "cat": "simon",
+    "tier": 2,
+    "q": "Simon 2: Wie viele Dollar entspricht ein Gold Sovereign im englischen Währungssystem?",
+    "answers": [
+      "15",
+      "16",
+      "45",
+      "64"
+    ],
+    "note": "Drei Silver Sovereigns zu je fünf Dollar ergeben 15 Dollar.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer-2"
+  },
+  {
+    "id": "hard-19",
+    "cat": "simon",
+    "tier": 2,
+    "q": "Simon 2: Welcher Name steht auf der Visitenkarte des Scherzartikelhändlers?",
+    "answers": [
+      "Dr. J. Beagle",
+      "Dr. M. Badger",
+      "Prof. P. Fox",
+      "Dr. B. Weasel"
+    ],
+    "note": "Die Visitenkarte nennt Dr. J. Beagle.",
+    "source": "https://adventuregamers.com/walkthroughs/simon-the-sorcerer-2"
+  },
+  {
+    "id": "hard-20",
+    "cat": "star",
+    "tier": 0,
+    "q": "Episode II: Wie heißt die leitende Bibliothekarin der Jedi-Archive?",
+    "answers": [
+      "Jocasta Nu",
+      "Depa Billaba",
+      "Yaddle",
+      "Adi Gallia"
+    ],
+    "note": "Jocasta Nu leitet die Jedi-Archive.",
+    "source": "https://www.starwars.com/databank/jocasta-nu"
+  },
+  {
+    "id": "hard-21",
+    "cat": "star",
+    "tier": 0,
+    "q": "Episode VI: Wie heißt der Pfleger von Jabbas Rancor?",
+    "answers": [
+      "Malakili",
+      "Bib Fortuna",
+      "Ree-Yees",
+      "Ephant Mon"
+    ],
+    "note": "Malakili kümmert sich um Jabbas Tiere.",
+    "source": "https://www.starwars.com/databank/malakili"
+  },
+  {
+    "id": "hard-22",
+    "cat": "star",
+    "tier": 0,
+    "q": "Episode V: Welchen Sternenzerstörer kommandiert Captain Needa?",
+    "answers": [
+      "Avenger",
+      "Executor",
+      "Devastator",
+      "Tyrant"
+    ],
+    "note": "Needa kommandiert die Avenger.",
+    "source": "https://www.starwars.com/databank/captain-needa"
+  },
+  {
+    "id": "hard-23",
+    "cat": "star",
+    "tier": 1,
+    "q": "Episode III: Wer warnt Obi-Wan auf Utapau heimlich vor Grievous?",
+    "answers": [
+      "Tion Medon",
+      "Sio Bibble",
+      "Mas Amedda",
+      "San Hill"
+    ],
+    "note": "Der Hafenverwalter Tion Medon gibt Obi-Wan den Hinweis.",
+    "source": "https://www.starwars.com/databank/tion-medon"
+  },
+  {
+    "id": "hard-24",
+    "cat": "star",
+    "tier": 1,
+    "q": "Episode VI: Zu welcher Spezies gehört Salacious B. Crumb?",
+    "answers": [
+      "Kowakianischer Echsenaffe",
+      "Kubaz",
+      "Chadra-Fan",
+      "Snivvian"
+    ],
+    "note": "Jabbas lachender Begleiter ist ein kowakianischer Echsenaffe.",
+    "source": "https://www.starwars.com/databank/salacious-crumb"
+  },
+  {
+    "id": "hard-25",
+    "cat": "star",
+    "tier": 1,
+    "q": "Episode I: Welcher Senator vertritt die Handelsföderation?",
+    "answers": [
+      "Lott Dod",
+      "Daultay Dofine",
+      "Rune Haako",
+      "Nute Gunray"
+    ],
+    "note": "Lott Dod ist der Senator der Handelsföderation.",
+    "source": "https://www.starwars.com/databank/lott-dod"
+  },
+  {
+    "id": "hard-26",
+    "cat": "star",
+    "tier": 2,
+    "q": "Episode I: Welcher Kapitän stirbt auf dem zerstörten Droidenkontrollschiff?",
+    "answers": [
+      "Daultay Dofine",
+      "Rune Haako",
+      "Lott Dod",
+      "Nute Gunray"
+    ],
+    "note": "Daultay Dofine bleibt an Bord des Kontrollschiffs.",
+    "source": "https://www.starwars.com/databank/daultay-dofine"
+  },
+  {
+    "id": "hard-27",
+    "cat": "star",
+    "tier": 2,
+    "q": "Episode II und III: Welcher Spezies gehört Palpatines blasse Beraterin Sly Moore an?",
+    "answers": [
+      "Umbaraner",
+      "Kaminoaner",
+      "Pau’an",
+      "Arkanier"
+    ],
+    "note": "Sly Moore stammt aus dem Volk der Umbaraner.",
+    "source": "https://www.starwars.com/databank/Sly-Moore"
+  },
+  {
+    "id": "hard-28",
+    "cat": "star",
+    "tier": 2,
+    "q": "Episode III: Auf welcher Ebene versteckt sich Grievous laut Tion Medon?",
+    "answers": [
+      "Auf der zehnten",
+      "Auf der siebten",
+      "Auf der zwölften",
+      "Auf der fünfzehnten"
+    ],
+    "note": "Tion Medon nennt Obi-Wan die zehnte Ebene.",
+    "source": "https://www.starwars.com/databank/tion-medon"
+  },
+  {
+    "id": "hard-29",
+    "cat": "star",
+    "tier": 2,
+    "q": "Episode III: Wie heißt das Reittier, das Obi-Wan auf Utapau auswählt?",
+    "answers": [
+      "Boga",
+      "Bongo",
+      "Bubo",
+      "Bala"
+    ],
+    "note": "Obi-Wans Varactyl trägt den Namen Boga.",
+    "source": "https://www.starwars.com/databank/utapau"
+  }
+];
