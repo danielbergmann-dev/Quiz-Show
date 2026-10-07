@@ -520,3 +520,681 @@ const HARD_BANK=[
     "source": "https://www.starwars.com/databank/utapau"
   }
 ];
+
+// 8-bit and 16-bit classics; platforms are specified where versions differ.
+BANK.push(...[
+  {
+    "id": "retro-0",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "Super Mario Bros. 3: Welches Power-up verleiht Mario Waschbärschwanz und Ohren?",
+    "answers": [
+      "Das Superblatt",
+      "Die Feder",
+      "Die Feuerblume",
+      "Der Froschanzug"
+    ],
+    "note": "Das Superblatt verwandelt Mario in Waschbär-Mario.",
+    "source": "https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAACE.pdf"
+  },
+  {
+    "id": "retro-1",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "Super Mario Bros. 3: Welcher Anzug erleichtert das Schwimmen?",
+    "answers": [
+      "Froschanzug",
+      "Hammeranzug",
+      "Tanuki-Anzug",
+      "Waschbäranzug"
+    ],
+    "note": "Der Froschanzug verbessert Marios Bewegung im Wasser.",
+    "source": "https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAACE.pdf"
+  },
+  {
+    "id": "retro-2",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "Donkey Kong Country: Wer begleitet Donkey Kong als zweiter spielbarer Held?",
+    "answers": [
+      "Diddy Kong",
+      "Dixie Kong",
+      "Funky Kong",
+      "Cranky Kong"
+    ],
+    "note": "Im ersten Country-Abenteuer kämpft Diddy an Donkey Kongs Seite.",
+    "source": "https://world-of-nintendo.com/manuals/super_nes/donkey_kong_country.shtml"
+  },
+  {
+    "id": "retro-3",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "Donkey Kong Country: Welcher tierische Helfer ist ein Nashorn?",
+    "answers": [
+      "Rambi",
+      "Enguarde",
+      "Expresso",
+      "Winky"
+    ],
+    "note": "Rambi ist das Nashorn.",
+    "source": "https://world-of-nintendo.com/manuals/super_nes/donkey_kong_country.shtml"
+  },
+  {
+    "id": "retro-4",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "A Link to the Past: Welches Werkzeug zieht Link über Abgründe zu passenden Zielen?",
+    "answers": [
+      "Der Enterhaken",
+      "Der Feuerstab",
+      "Der Bumerang",
+      "Die Flöte"
+    ],
+    "note": "Der Enterhaken überbrückt bestimmte Abgründe.",
+    "source": "https://www.zeldadungeon.net/wiki/A_Link_to_the_Past_Items"
+  },
+  {
+    "id": "retro-5",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "Link’s Awakening auf dem Game Boy: Welches Wesen soll Link aufwecken?",
+    "answers": [
+      "Den Windfisch",
+      "Den Deku-Baum",
+      "Lord Jabu-Jabu",
+      "Den roten Leuenkönig"
+    ],
+    "note": "Links Reise dreht sich um den schlafenden Windfisch.",
+    "source": "https://gamefaqs.gamespot.com/gameboy/563277-the-legend-of-zelda-links-awakening/faqs/13376"
+  },
+  {
+    "id": "retro-6",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "Super Mario Bros. 3: Welcher Anzug erlaubt Mario, sich in eine Statue zu verwandeln?",
+    "answers": [
+      "Tanuki-Anzug",
+      "Froschanzug",
+      "Hammeranzug",
+      "Nur das Superblatt"
+    ],
+    "note": "Die Statue gehört zur Tanuki-Verwandlung.",
+    "source": "https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAACE.pdf"
+  },
+  {
+    "id": "retro-7",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "Super Mario Bros. 3: Welcher Gegenstand zerstört Felsen auf der Weltkarte?",
+    "answers": [
+      "Ein Hammer",
+      "Eine Feuerblume",
+      "Eine Wolke",
+      "Eine Spieluhr"
+    ],
+    "note": "Der Karten-Hammer räumt Felsen aus dem Weg.",
+    "source": "https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAACE.pdf"
+  },
+  {
+    "id": "retro-8",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "Donkey Kong Country: Wie heißt der Schwertfisch, auf dem man reiten kann?",
+    "answers": [
+      "Enguarde",
+      "Expresso",
+      "Squawks",
+      "Rambi"
+    ],
+    "note": "Enguarde hilft in Unterwasserleveln.",
+    "source": "https://world-of-nintendo.com/manuals/super_nes/donkey_kong_country.shtml"
+  },
+  {
+    "id": "retro-9",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "Donkey Kong Country: Welcher Helfer ist ein Strauß?",
+    "answers": [
+      "Expresso",
+      "Winky",
+      "Squawks",
+      "Enguarde"
+    ],
+    "note": "Expresso ist der schnelle Strauß.",
+    "source": "https://world-of-nintendo.com/manuals/super_nes/donkey_kong_country.shtml"
+  },
+  {
+    "id": "retro-10",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "A Link to the Past: Welcher Gegenstand verhindert Links Verwandlung in ein Kaninchen in der Schattenwelt?",
+    "answers": [
+      "Die Mondperle",
+      "Der Zauberspiegel",
+      "Das Buch Mudora",
+      "Das Kraftarmband"
+    ],
+    "note": "Mit der Mondperle behält Link seine Gestalt.",
+    "source": "https://www.zeldadungeon.net/wiki/A_Link_to_the_Past_Items"
+  },
+  {
+    "id": "retro-11",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "Link’s Awakening auf dem Game Boy: Wer lehrt Link die Ballade des Windfisches?",
+    "answers": [
+      "Marin",
+      "Tarin",
+      "Richard",
+      "Madam MiouMiou"
+    ],
+    "note": "Marin bringt Link die Ballade bei.",
+    "source": "https://gamefaqs.gamespot.com/gameboy/563277-the-legend-of-zelda-links-awakening/faqs/13376"
+  },
+  {
+    "id": "retro-12",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "Super Mario Bros. 3: Was bewirkt die Spieluhr auf der Weltkarte?",
+    "answers": [
+      "Sie lässt Hammer-Brüder einschlafen",
+      "Sie versetzt Mario in eine andere Welt",
+      "Sie deckt geheime Wege auf",
+      "Sie verwandelt Felsen in Münzen"
+    ],
+    "note": "Schlafende Karten-Gegner lassen sich umgehen.",
+    "source": "https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAACE.pdf"
+  },
+  {
+    "id": "retro-13",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "Super Mario Bros. 3: Was ermöglicht die Lakitu-Wolke im Karteninventar?",
+    "answers": [
+      "Ein gewöhnliches Level zu überspringen",
+      "Ein Luftschiff zurückzurufen",
+      "Einen Wasserpegel abzusenken",
+      "Alle Festungen zu öffnen"
+    ],
+    "note": "Mit der Wolke kann Mario einen Levelpunkt passieren.",
+    "source": "https://www.nintendo.co.jp/clv/manuals/en/pdf/CLV-P-NAACE.pdf"
+  },
+  {
+    "id": "retro-14",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "Donkey Kong Country: Welcher tierische Helfer trägt in einer dunklen Höhle eine Lampe?",
+    "answers": [
+      "Squawks",
+      "Expresso",
+      "Winky",
+      "Rambi"
+    ],
+    "note": "Squawks beleuchtet den Weg.",
+    "source": "https://world-of-nintendo.com/manuals/super_nes/donkey_kong_country.shtml"
+  },
+  {
+    "id": "retro-15",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "A Link to the Past: Welches Buch liest alte Inschriften?",
+    "answers": [
+      "Buch Mudora",
+      "Buch der Geheimnisse",
+      "Buch der Schatten",
+      "Buch der Sieben Weisen"
+    ],
+    "note": "Das Buch Mudora übersetzt die Inschriften.",
+    "source": "https://www.zeldadungeon.net/wiki/A_Link_to_the_Past_Items"
+  },
+  {
+    "id": "retro-16",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "A Link to the Past: Welches Medaillon öffnet den Zugang zum Schildkrötenfelsen?",
+    "answers": [
+      "Quake / Erdbeben",
+      "Ether / Äther",
+      "Bombos",
+      "Keines, nur der Eisstab"
+    ],
+    "note": "Am Schildkrötenfelsen wird Quake benötigt.",
+    "source": "https://www.zeldadungeon.net/wiki/A_Link_to_the_Past_Items"
+  },
+  {
+    "id": "retro-17",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "Link’s Awakening auf dem Game Boy: Wie viele Instrumente der Sirenen muss Link sammeln?",
+    "answers": [
+      "Acht",
+      "Sechs",
+      "Sieben",
+      "Neun"
+    ],
+    "note": "In acht Dungeons liegen acht Instrumente.",
+    "source": "https://gamefaqs.gamespot.com/gameboy/563277-the-legend-of-zelda-links-awakening/faqs/13376"
+  },
+  {
+    "id": "retro-18",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Sonic the Hedgehog auf dem Mega Drive: Was sammelt Sonic als Schutz vor Treffern?",
+    "answers": [
+      "Ringe",
+      "Kristalle",
+      "Sterne",
+      "Schlüssel"
+    ],
+    "note": "Ringe schützen Sonic vor gewöhnlichen Treffern.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-19",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Sonic 2 auf dem Mega Drive: Welches Tier ist Tails?",
+    "answers": [
+      "Ein Fuchs",
+      "Ein Waschbär",
+      "Ein Eichhörnchen",
+      "Ein Igel"
+    ],
+    "note": "Tails ist ein Fuchs mit zwei Schwänzen.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-20",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Sonic 3 & Knuckles: Welche Figur kann gleiten und Wände erklimmen?",
+    "answers": [
+      "Knuckles",
+      "Tails",
+      "Metal Sonic",
+      "Amy"
+    ],
+    "note": "Knuckles nutzt Gleitflug und Kletterfähigkeiten.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-21",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Welches klassische Turtles-Spiel trägt den Untertitel „Turtles in Time“ in seiner SNES-Fassung?",
+    "answers": [
+      "Teenage Mutant Ninja Turtles IV",
+      "Teenage Mutant Ninja Turtles II",
+      "Teenage Mutant Ninja Turtles III",
+      "Teenage Mutant Ninja Turtles V"
+    ],
+    "note": "Auf dem SNES heißt es TMNT IV: Turtles in Time.",
+    "source": "https://www.konami.com/games/eu/en/products/teenage_mutant_ninja_turtles/"
+  },
+  {
+    "id": "retro-22",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Welches Studio entwickelte die klassischen Turtles-Spiele für NES, SNES und Mega Drive?",
+    "answers": [
+      "Konami",
+      "Capcom",
+      "Rare",
+      "Treasure"
+    ],
+    "note": "Die klassischen Turtles-Spiele stammen von Konami.",
+    "source": "https://www.konami.com/games/eu/en/products/teenage_mutant_ninja_turtles/"
+  },
+  {
+    "id": "retro-23",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Streets of Rage 2: Welche spielbare Figur kämpft auf Rollschuhen?",
+    "answers": [
+      "Skate",
+      "Axel",
+      "Max",
+      "Blaze"
+    ],
+    "note": "Skate nutzt seine Rollschuhe im Kampf.",
+    "source": "https://strategywiki.org/wiki/Streets_of_Rage_2/Characters"
+  },
+  {
+    "id": "retro-24",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Sonic 2 auf dem Mega Drive: Wie heißt Tails mit richtigem Namen?",
+    "answers": [
+      "Miles Prower",
+      "Ray Prower",
+      "Mighty Miles",
+      "Nack Prower"
+    ],
+    "note": "Sein Name Miles Prower spielt auf „miles per hour“ an.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-25",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Sonic 2 auf dem Mega Drive: Wie viele Chaos Emeralds gibt es?",
+    "answers": [
+      "Sieben",
+      "Sechs",
+      "Acht",
+      "Fünf"
+    ],
+    "note": "In Sonic 2 sind es sieben Chaos Emeralds.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-26",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Sonic 3 & Knuckles: Welcher Schild lässt Sonic unter Wasser atmen?",
+    "answers": [
+      "Wasserschild",
+      "Feuerschild",
+      "Blitzschild",
+      "Alle drei Schilde"
+    ],
+    "note": "Der Wasserschild schützt vor dem Ertrinken.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-27",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Welcher Turtles-Klassiker erschien für Mega Drive / Genesis?",
+    "answers": [
+      "The Hyperstone Heist",
+      "The Manhattan Project",
+      "Fall of the Foot Clan",
+      "Back from the Sewers"
+    ],
+    "note": "The Hyperstone Heist ist der Mega-Drive-Titel.",
+    "source": "https://www.konami.com/games/eu/en/products/teenage_mutant_ninja_turtles/"
+  },
+  {
+    "id": "retro-28",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Streets of Rage 2: Welche spielbare Figur ist ein Wrestler?",
+    "answers": [
+      "Max",
+      "Axel",
+      "Skate",
+      "Blaze"
+    ],
+    "note": "Max ist der kräftige Wrestler des Teams.",
+    "source": "https://strategywiki.org/wiki/Streets_of_Rage_2/Characters"
+  },
+  {
+    "id": "retro-29",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Turtles in Time auf dem SNES: Wer ist der Boss von „Bury My Shell at Wounded Knee“?",
+    "answers": [
+      "Leatherhead",
+      "Baxter Stockman",
+      "Slash",
+      "Rat King"
+    ],
+    "note": "Am Ende des Zuglevels wartet Leatherhead.",
+    "source": "https://gamefaqs.gamespot.com/snes/588779-teenage-mutant-ninja-turtles-iv-turtles-in-time/faqs/47909"
+  },
+  {
+    "id": "retro-30",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Sonic 3 & Knuckles: Welcher Schild zieht nahe Ringe an?",
+    "answers": [
+      "Blitzschild",
+      "Wasserschild",
+      "Feuerschild",
+      "Keiner der Schilde"
+    ],
+    "note": "Der Blitzschild zieht Ringe an.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-31",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Sonic 3 & Knuckles: Was wird für Hyper Sonic zusätzlich zu den Chaos Emeralds gesammelt?",
+    "answers": [
+      "Die Super Emeralds",
+      "Die Time Stones",
+      "Die Sol Emeralds",
+      "Die Chaos Rings"
+    ],
+    "note": "Hyper Sonic benötigt die Super Emeralds.",
+    "source": "https://manuals.sega.com/origins/en/index.html"
+  },
+  {
+    "id": "retro-32",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Turtles in Time auf dem SNES: Welches Gegnerduo kämpft auf dem Piratenschiff?",
+    "answers": [
+      "Bebop und Rocksteady",
+      "Tokka und Rahzar",
+      "Slash und Leatherhead",
+      "Baxter und Rat King"
+    ],
+    "note": "Bebop und Rocksteady stehen am Ende von „Skull and Crossbones“.",
+    "source": "https://gamefaqs.gamespot.com/snes/588779-teenage-mutant-ninja-turtles-iv-turtles-in-time/faqs/47909"
+  },
+  {
+    "id": "retro-33",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Welcher Untertitel gehört zum dritten Turtles-Spiel für NES?",
+    "answers": [
+      "The Manhattan Project",
+      "The Hyperstone Heist",
+      "Radical Rescue",
+      "Back from the Sewers"
+    ],
+    "note": "TMNT III auf dem NES heißt The Manhattan Project.",
+    "source": "https://www.konami.com/games/eu/en/products/teenage_mutant_ninja_turtles/"
+  },
+  {
+    "id": "retro-34",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Streets of Rage 2: Wessen jüngerer Bruder ist Skate?",
+    "answers": [
+      "Adam Hunter",
+      "Axel Stone",
+      "Max Thunder",
+      "Mr. X"
+    ],
+    "note": "Skate ist Adams jüngerer Bruder.",
+    "source": "https://strategywiki.org/wiki/Streets_of_Rage_2/Characters"
+  },
+  {
+    "id": "retro-35",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Turtles in Time auf dem SNES: In welchem Jahr spielt „Neon Night-Riders“?",
+    "answers": [
+      "2020",
+      "1999",
+      "2050",
+      "2100"
+    ],
+    "note": "Die Hoverboard-Etappe ist im Jahr 2020 angesiedelt.",
+    "source": "https://gamefaqs.gamespot.com/snes/588779-teenage-mutant-ninja-turtles-iv-turtles-in-time/faqs/47909"
+  }
+]);
+HARD_BANK.push(...[
+  {
+    "id": "hard-retro-0",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "A Link to the Past: Welches Medaillon öffnet den Dungeon Misery Mire (englischer Name)?",
+    "answers": [
+      "Ether / Äther",
+      "Bombos",
+      "Quake / Erdbeben",
+      "Die Mondperle"
+    ],
+    "note": "Für Misery Mire wird Ether eingesetzt.",
+    "source": "https://www.zeldadungeon.net/wiki/A_Link_to_the_Past_Items"
+  },
+  {
+    "id": "hard-retro-1",
+    "cat": "nintendo",
+    "tier": 0,
+    "q": "Super Mario Bros. 3: Welche Verwandlung schützt Mario beim Ducken vor vielen Feuerbällen?",
+    "answers": [
+      "Hammer-Mario",
+      "Feuer-Mario",
+      "Waschbär-Mario",
+      "Frosch-Mario"
+    ],
+    "note": "Der Panzer des Hammeranzugs wehrt Feuer ab.",
+    "source": "https://en.wikipedia.org/wiki/Super_Mario_Bros._3"
+  },
+  {
+    "id": "hard-retro-2",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "Super Mario Bros. 3 auf dem NES: In welchem einzigen Level gibt es den nutzbaren Goomba-Schuh?",
+    "answers": [
+      "5-3",
+      "3-5",
+      "6-3",
+      "7-5"
+    ],
+    "note": "Der Goomba-Schuh erscheint in Welt 5-3.",
+    "source": "https://en.wikibooks.org/wiki/Super_Mario_Bros._3/Items"
+  },
+  {
+    "id": "hard-retro-3",
+    "cat": "nintendo",
+    "tier": 1,
+    "q": "Super Mario World auf dem SNES: Wie viele gefundene Ausgänge zeigt ein vollständig gelöster Spielstand an?",
+    "answers": [
+      "96",
+      "95",
+      "100",
+      "120"
+    ],
+    "note": "Alle gezählten Ausgänge ergeben 96.",
+    "source": "https://www.mariowiki.com/Secret_exit"
+  },
+  {
+    "id": "hard-retro-4",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "A Link to the Past: Welches Wesen überreicht Link das Quake-Medaillon nach einem Steinwurf ins Wasser?",
+    "answers": [
+      "Ein Wels",
+      "Eine große Fee",
+      "Ein Zora-König",
+      "Eine Schildkröte"
+    ],
+    "note": "Ein Wels übergibt Link Quake.",
+    "source": "https://gamefaqs.gamespot.com/snes/588436-the-legend-of-zelda-a-link-to-the-past/faqs/20432"
+  },
+  {
+    "id": "hard-retro-5",
+    "cat": "nintendo",
+    "tier": 2,
+    "q": "Link’s Awakening auf dem Game Boy: Welches Instrument erhält Link im Fischmaul?",
+    "answers": [
+      "Wind-Marimba",
+      "Muschelgeige",
+      "Poseidon-Harfe",
+      "Seestern-Triangel"
+    ],
+    "note": "Die Wind-Marimba ist das fünfte Instrument.",
+    "source": "https://www.zeldapendium.de/wiki/Instrumente_der_Sirenen"
+  },
+  {
+    "id": "hard-retro-6",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Turtles in Time auf dem SNES: In welchem Jahr fährt der Zug in „Bury My Shell at Wounded Knee“?",
+    "answers": [
+      "1885",
+      "1530",
+      "1899",
+      "1865"
+    ],
+    "note": "Das Zuglevel spielt 1885.",
+    "source": "https://gamefaqs.gamespot.com/snes/588779-teenage-mutant-ninja-turtles-iv-turtles-in-time/faqs/14244"
+  },
+  {
+    "id": "hard-retro-7",
+    "cat": "sega",
+    "tier": 0,
+    "q": "Streets of Rage 2: Unter welchem Namen ist Skate in der japanischen Fassung bekannt?",
+    "answers": [
+      "Sammy",
+      "Eddie Junior",
+      "Ricky",
+      "Billy"
+    ],
+    "note": "In Japan heißt die Figur Sammy.",
+    "source": "https://strategywiki.org/wiki/Streets_of_Rage_2/Characters"
+  },
+  {
+    "id": "hard-retro-8",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Turtles in Time auf dem SNES: Wer ist der Boss von „Prehistoric Turtlesaurus“?",
+    "answers": [
+      "Slash",
+      "Leatherhead",
+      "Rat King",
+      "Metalhead"
+    ],
+    "note": "Die SNES-Fassung setzt hier Slash als Boss ein.",
+    "source": "https://gamefaqs.gamespot.com/snes/588779-teenage-mutant-ninja-turtles-iv-turtles-in-time/faqs/14244"
+  },
+  {
+    "id": "hard-retro-9",
+    "cat": "sega",
+    "tier": 1,
+    "q": "Turtles in Time auf dem SNES: Auf welches Jahr ist „Starbase: Where No Turtle Has Gone Before“ datiert?",
+    "answers": [
+      "2100",
+      "2020",
+      "2000",
+      "2200"
+    ],
+    "note": "Die Raumstation liegt im Jahr 2100.",
+    "source": "https://gamefaqs.gamespot.com/snes/588779-teenage-mutant-ninja-turtles-iv-turtles-in-time/faqs/14244"
+  },
+  {
+    "id": "hard-retro-10",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Sonic 3 & Knuckles auf dem Mega Drive: Welche Verwandlung erhält Tails mit allen Super Emeralds?",
+    "answers": [
+      "Super Tails",
+      "Hyper Tails",
+      "Turbo Tails",
+      "Ultra Tails"
+    ],
+    "note": "Im Original heißt die Verwandlung Super Tails.",
+    "source": "https://manuals.sega.com/wp-content/uploads/2022/06/SM_Sonic_Origin_En_220617.pdf"
+  },
+  {
+    "id": "hard-retro-11",
+    "cat": "sega",
+    "tier": 2,
+    "q": "Wie heißt das dritte Turtles-Spiel für den ursprünglichen Game Boy?",
+    "answers": [
+      "Radical Rescue",
+      "The Manhattan Project",
+      "Back from the Sewers",
+      "Fall of the Foot Clan"
+    ],
+    "note": "Auf dem Game Boy trägt Teil III den Untertitel Radical Rescue.",
+    "source": "https://www.konami.com/games/eu/en/products/teenage_mutant_ninja_turtles/"
+  }
+]);
