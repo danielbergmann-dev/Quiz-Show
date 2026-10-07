@@ -1,4 +1,4 @@
-const $=s=>document.querySelector(s),names={all:'Alle Welten',lucas:'LucasArts',star:'Star Wars',simon:'Simon I & II',nintendo:'Nintendo Retro',sega:'SEGA & Turtles',hard:'Schwere Fragen'},prizes=[50,100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,500000,1000000];
+const $=s=>document.querySelector(s),names={all:'Alle Welten',lucas:'LucasArts',star:'Star Wars',simon:'Simon I & II',nintendo:'Pilze, Pixel & Triforce',sega:'Stacheln, Panzer & Prügel',hard:'Schwere Fragen'},prizes=[50,100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,500000,1000000];
 let category='all',round=[],index=0,selected=null,phase='lobby',used={},hidden=[],help={},won=0,sound=false,audioCtx;
 const euro=n=>new Intl.NumberFormat('de-DE').format(n)+' €';
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
