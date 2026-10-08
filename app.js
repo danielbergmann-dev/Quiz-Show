@@ -1,11 +1,11 @@
-const $=s=>document.querySelector(s),names={all:'Alle Welten',lucas:'LucasArts',star:'Star Wars',simon:'Simon I & II',nintendo:'Pilze, Pixel & Triforce',sega:'Stacheln, Panzer & Prügel',hard:'Schwere Fragen'},prizes=[50,100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,500000,1000000];
+const $=s=>document.querySelector(s),names={all:'Alle Welten',lucas:'LucasArts',star:'Star Wars',simon:'Simon I & II',nintendo:'Pilze, Pixel & Triforce',sega:'Stacheln, Panzer & Prügel',purple:'Deep Purple',beatles:'The Beatles',hard:'Schwere Fragen'},prizes=[50,100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,500000,1000000];
 let category='all',round=[],index=0,selected=null,phase='lobby',used={},hidden=[],help={},won=0,sound=false,audioCtx;
 const euro=n=>new Intl.NumberFormat('de-DE').format(n)+' €';
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function tone(good){if(!sound)return;try{audioCtx??=new(window.AudioContext||window.webkitAudioContext)();audioCtx.resume();const t=audioCtx.currentTime;[good?440:170,good?554:150,good?660:120].forEach((hz,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=hz;g.gain.setValueAtTime(0,t+i*.11);g.gain.linearRampToValueAtTime(.08,t+i*.11+.02);g.gain.exponentialRampToValueAtTime(.001,t+i*.11+.35);o.connect(g);g.connect(audioCtx.destination);o.start(t+i*.11);o.stop(t+i*.11+.4)})}catch{}}
 $('#sound').onclick=()=>{sound=!sound;$('#sound').innerHTML='♪ <span>Ton '+(sound?'an':'aus')+'</span>';$('#sound').setAttribute('aria-label','Ton '+(sound?'ausschalten':'einschalten'));$('#sound').title='Ton '+(sound?'ausschalten':'einschalten');tone(true)};
 
-const topicIds=['lucas','star','simon','nintendo','sega'];
+const topicIds=['lucas','star','simon','nintendo','sega','purple','beatles'];
 let selectedTopics=new Set(topicIds),expertMode=false;
 let seenQuestions={},seenSequence=0;
 const historyKey='quiz-show-history-v1',settingsKey='quiz-show-settings-v1';
@@ -26,14 +26,19 @@ function rememberQuestion(q){
  seenQuestions[q.id]=++seenSequence;
  try{localStorage.setItem(historyKey,JSON.stringify(seenQuestions))}catch{}
 }
-function mixLabel(){return selectedTopics.size===5?'Alle Welten':selectedTopics.size===1?names[[...selectedTopics][0]]:selectedTopics.size+' Themen im Mix'}
+function mixLabel(){return selectedTopics.size===topicIds.length?'Alle Welten':selectedTopics.size===1?names[[...selectedTopics][0]]:selectedTopics.size+' Themen im Mix'}
 function selectedPool(){return (expertMode?HARD_BANK:BANK).filter(q=>selectedTopics.has(q.cat))}
 function toggleTopic(id){if(!topicIds.includes(id))return;selectedTopics.has(id)?selectedTopics.delete(id):selectedTopics.add(id);saveSettings();lobby();document.querySelector('[data-cat="'+id+'"]')?.focus({preventScroll:true})}
+function questionSubject(q){
+ if(q.subject)return q.cat+':'+q.subject;
+ const title=q.q.match(/Monkey Island|Tentacle|Full Throttle|Grim Fandango|The Dig|Loom|Zak McKracken|Sam.*Max|Mario|Zelda|Donkey Kong|Sonic|Turtles|Streets of Rage|Simon II|Simon I/i);
+ return q.cat+':'+(title?title[0].toLowerCase():'general');
+}
 function pickFresh(pool,count,counts={}){
  const remaining=shuffle(pool),picks=[];
  while(picks.length<count&&remaining.length){
-  remaining.sort((a,b)=>(seenQuestions[a.id]||0)-(seenQuestions[b.id]||0)||(counts[a.cat]||0)-(counts[b.cat]||0));
-  const q=remaining.shift();picks.push(q);counts[q.cat]=(counts[q.cat]||0)+1;
+  remaining.sort((a,b)=>(seenQuestions[a.id]||0)-(seenQuestions[b.id]||0)||(counts[a.cat]||0)-(counts[b.cat]||0)||(counts[questionSubject(a)]||0)-(counts[questionSubject(b)]||0));
+  const q=remaining.shift();picks.push(q);counts[q.cat]=(counts[q.cat]||0)+1;counts[questionSubject(q)]=(counts[questionSubject(q)]||0)+1;
  }
  return picks;
 }
@@ -45,15 +50,15 @@ function lobby(){
  $('#main').innerHTML=`<section class="lobby">
  <h1 class="mix-title">Dein Themenmix</h1>
  <p class="hint">Eine oder mehrere Welten antippen. Erneut tippen zum Abwählen.</p>
- <div class="selection-tools"><span>${selectedTopics.size} von 5 ausgewählt</span><button class="text-button" id="all-topics">${selectedTopics.size===5?'Alle abwählen':'Alle auswählen'}</button></div>
- <div class="categories" role="group" aria-label="Themen auswählen">${topicIds.map(id=>`<button class="category ${selectedTopics.has(id)?'active':''}" data-cat="${id}" aria-pressed="${selectedTopics.has(id)}"><span class="selection-check" aria-hidden="true">${selectedTopics.has(id)?'✓':'＋'}</span><strong>${names[id]}</strong><small>${{lucas:'Adventure-Klassiker',star:'Die Kinofilme',simon:'Magie & Sarkasmus',nintendo:'Mario · Zelda · Donkey Kong',sega:'Sonic · Turtles · Streets of Rage'}[id]}</small></button>`).join('')}</div>
+ <div class="selection-tools"><span>${selectedTopics.size} von ${topicIds.length} ausgewählt</span><button class="text-button" id="all-topics">${selectedTopics.size===topicIds.length?'Alle abwählen':'Alle auswählen'}</button></div>
+ <div class="categories" role="group" aria-label="Themen auswählen">${topicIds.map(id=>`<button class="category ${selectedTopics.has(id)?'active':''}" data-cat="${id}" aria-pressed="${selectedTopics.has(id)}"><span class="selection-check" aria-hidden="true">${selectedTopics.has(id)?'✓':'＋'}</span><strong>${names[id]}</strong><small>${{lucas:'Adventure-Klassiker',star:'Die Kinofilme',simon:'Magie & Sarkasmus',nintendo:'Mario · Zelda · Donkey Kong',sega:'Sonic · Turtles · Sega-Klassiker',purple:'Hardrock · Alben · Besetzungen',beatles:'Songs · Studio · Bandgeschichte'}[id]}</small></button>`).join('')}</div>
  <button class="difficulty-toggle ${expertMode?'active':''}" id="expert-mode" aria-pressed="${expertMode}"><span>Schwere Fragen</span><strong>${expertMode?'An ✓':'Aus'}</strong></button>
  <p class="hint pool-note" aria-live="polite">${!selectedTopics.size?'Wähle mindestens eine Kategorie.':fallback?'Expertenfragen werden mit den schwierigsten klassischen Fragen deiner Auswahl ergänzt.':pool.length+' Fragen in deiner Auswahl.'}</p>
  <button class="primary start" id="start" ${selectedTopics.size?'':'disabled'}>Quizshow starten</button>
  <div class="rules"><span><b>15</b> Gewinnstufen</span><span><b>3</b> Joker</span><span><b>2</b> Sicherheitsstufen</span></div>
  <p class="hint history-note">Schon gespielte Fragen werden auf diesem Gerät nach hinten gestellt.</p></section>`;
  document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>toggleTopic(b.dataset.cat));
- $('#all-topics').onclick=()=>{selectedTopics=selectedTopics.size===5?new Set():new Set(topicIds);saveSettings();lobby();$('#all-topics').focus({preventScroll:true})};
+ $('#all-topics').onclick=()=>{selectedTopics=selectedTopics.size===topicIds.length?new Set():new Set(topicIds);saveSettings();lobby();$('#all-topics').focus({preventScroll:true})};
  $('#expert-mode').onclick=()=>{expertMode=!expertMode;saveSettings();lobby();$('#expert-mode').focus({preventScroll:true})};
  $('#start').onclick=start;
 }

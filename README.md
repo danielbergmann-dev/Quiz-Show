@@ -1,8 +1,10 @@
 # Die letzte Frage
 
-Moderne Fan-Quizshow mit 75 Fragen aus LucasArts-Adventures, Star Wars und Simon the Sorcerer I & II.
+Moderne Fan-Quizshow mit 363 Fragen in sieben frei kombinierbaren Kategorien: LucasArts, Star Wars, Simon the Sorcerer I & II, Nintendo-Klassiker, Sega-Klassiker, Deep Purple und The Beatles.
 
 15 Gewinnstufen, drei Joker, Themenauswahl, Sound und mobiles Design. Alle Gewinne sind Spielgeld; Publikum und Telefonhilfe sind simuliert.
+
+231 klassische Fragen und 132 Expertenfragen. Ungespielte Fragen werden bevorzugt, bereits angezeigte Fragen lokal im Browser gespeichert. Bei gleicher Frische werden Kategorien und Unterthemen verteilt. Wiederholungen sind nach Ausschöpfen des jeweiligen Pools möglich. Jede Frage bietet einen Quellenlink.
 
 ## Starten
 
