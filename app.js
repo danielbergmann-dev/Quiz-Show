@@ -1,11 +1,11 @@
-const $=s=>document.querySelector(s),names={all:'Alle Welten',lucas:'LucasArts',star:'Star Wars',simon:'Simon I & II',nintendo:'Pilze, Pixel & Triforce',sega:'Stacheln, Panzer & Prügel',purple:'Deep Purple',beatles:'The Beatles',hard:'Schwere Fragen'},prizes=[50,100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,500000,1000000];
+const $=s=>document.querySelector(s),names={all:'Alle Welten',lucas:'LucasArts',star:'Star Wars',simon:'Simon I & II',nintendo:'Pilze, Pixel & Triforce',sega:'Stacheln, Panzer & Prügel',purple:'Deep Purple',beatles:'The Beatles',lotr:'Herr der Ringe',aha:'a-ha',hard:'Schwere Fragen'},prizes=[50,100,200,300,500,1000,2000,4000,8000,16000,32000,64000,125000,500000,1000000];
 let category='all',round=[],index=0,selected=null,phase='lobby',used={},hidden=[],help={},won=0,sound=false,audioCtx;
 const euro=n=>new Intl.NumberFormat('de-DE').format(n)+' €';
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function tone(good){if(!sound)return;try{audioCtx??=new(window.AudioContext||window.webkitAudioContext)();audioCtx.resume();const t=audioCtx.currentTime;[good?440:170,good?554:150,good?660:120].forEach((hz,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=hz;g.gain.setValueAtTime(0,t+i*.11);g.gain.linearRampToValueAtTime(.08,t+i*.11+.02);g.gain.exponentialRampToValueAtTime(.001,t+i*.11+.35);o.connect(g);g.connect(audioCtx.destination);o.start(t+i*.11);o.stop(t+i*.11+.4)})}catch{}}
 $('#sound').onclick=()=>{sound=!sound;$('#sound').innerHTML='♪ <span>Ton '+(sound?'an':'aus')+'</span>';$('#sound').setAttribute('aria-label','Ton '+(sound?'ausschalten':'einschalten'));$('#sound').title='Ton '+(sound?'ausschalten':'einschalten');tone(true)};
 
-const topicIds=['lucas','star','simon','nintendo','sega','purple','beatles'];
+const topicIds=['lucas','star','simon','nintendo','sega','purple','beatles','lotr','aha'];
 let selectedTopics=new Set(topicIds),expertMode=false;
 let seenQuestions={},seenSequence=0;
 const historyKey='quiz-show-history-v1',settingsKey='quiz-show-settings-v1';

@@ -4354,3 +4354,909 @@ HARD_BANK.push(...[
     "subject": "bpepper"
   }
 ]);
+
+// Lord of the Rings and a-ha: 15 classic and 15 expert questions each.
+BANK.push(...[
+  {
+    "id": "expand-lotr-001",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Welcher Hobbit übernimmt die Aufgabe, den Einen Ring nach Mordor zu bringen?",
+    "answers": [
+      "Frodo Beutlin",
+      "Merry Brandybock",
+      "Pippin Tuk",
+      "Bilbo Beutlin"
+    ],
+    "note": "Frodo übernimmt die Aufgabe beim Rat von Elrond.",
+    "source": "https://tolkiengateway.net/wiki/Fellowship_of_the_Ring",
+    "subject": "fellowship"
+  },
+  {
+    "id": "expand-lotr-002",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Wer erschuf den Einen Ring?",
+    "answers": [
+      "Sauron",
+      "Saruman",
+      "Gandalf",
+      "Elrond"
+    ],
+    "note": "Sauron schmiedete ihn als Herrscherring.",
+    "source": "https://tolkiengateway.net/wiki/One_Ring",
+    "subject": "ring"
+  },
+  {
+    "id": "expand-lotr-003",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Welchem Volk gehört Legolas an?",
+    "answers": [
+      "Elben",
+      "Zwerge",
+      "Hobbits",
+      "Ents"
+    ],
+    "note": "Legolas vertritt die Elben in der Gemeinschaft.",
+    "source": "https://tolkiengateway.net/wiki/Fellowship_of_the_Ring",
+    "subject": "fellowship"
+  },
+  {
+    "id": "expand-lotr-004",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Welcher Zwerg gehört zu den neun Gefährten?",
+    "answers": [
+      "Gimli",
+      "Thorin",
+      "Balin",
+      "Dáin"
+    ],
+    "note": "Gimli ist Glóins Sohn.",
+    "source": "https://tolkiengateway.net/wiki/Fellowship_of_the_Ring",
+    "subject": "fellowship"
+  },
+  {
+    "id": "expand-lotr-005",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Wo kann der Eine Ring vernichtet werden?",
+    "answers": [
+      "Im Schicksalsberg",
+      "Im Fangornwald",
+      "In Bruchtal",
+      "Im Anduin"
+    ],
+    "note": "Nur das Feuer seines Entstehungsorts kann ihn zerstören.",
+    "source": "https://tolkiengateway.net/wiki/One_Ring",
+    "subject": "ring"
+  },
+  {
+    "id": "expand-lotr-006",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Wie nennt man Aragorn in Bree?",
+    "answers": [
+      "Streicher",
+      "Grimbold",
+      "Erkenbrand",
+      "Gríma"
+    ],
+    "note": "Streicher ist sein dortiger Beiname.",
+    "source": "https://tolkiengateway.net/wiki/Aragorn",
+    "subject": "aragorn"
+  },
+  {
+    "id": "expand-lotr-007",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Was ist Baumbart?",
+    "answers": [
+      "Ein Ent",
+      "Ein Troll",
+      "Ein Zauberer",
+      "Ein Ork"
+    ],
+    "note": "Ents sind die Hirten der Bäume.",
+    "source": "https://tolkiengateway.net/wiki/Treebeard",
+    "subject": "tree"
+  },
+  {
+    "id": "expand-lotr-008",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Wer regiert Rohan während des Ringkriegs vor Éomer?",
+    "answers": [
+      "Théoden",
+      "Denethor",
+      "Thranduil",
+      "Dáin"
+    ],
+    "note": "Théoden führt die Rohirrim in den Krieg.",
+    "source": "https://tolkiengateway.net/wiki/Rohan",
+    "subject": "rohan"
+  },
+  {
+    "id": "expand-lotr-009",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Wie heißt die große Spinne, der Frodo und Sam begegnen?",
+    "answers": [
+      "Kankra",
+      "Ungoliant",
+      "Arachne",
+      "Aragog"
+    ],
+    "note": "Ihr englischer Name lautet Shelob.",
+    "source": "https://tolkiengateway.net/wiki/Shelob",
+    "subject": "shelob"
+  },
+  {
+    "id": "expand-lotr-010",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Wie heißt das sättigende Reisebrot der Elben?",
+    "answers": [
+      "Lembas",
+      "Miruvor",
+      "Athelas",
+      "Mithril"
+    ],
+    "note": "Lembas ist als Wegbrot für lange Reisen gedacht.",
+    "source": "https://tolkiengateway.net/wiki/Lembas",
+    "subject": "lembas"
+  },
+  {
+    "id": "expand-lotr-011",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Wie heißt Gandalfs Pferd?",
+    "answers": [
+      "Schattenfell",
+      "Brego",
+      "Asfaloth",
+      "Schneemähne"
+    ],
+    "note": "Schattenfell gehört zu den edlen Mearas.",
+    "source": "https://tolkiengateway.net/wiki/Gandalf",
+    "subject": "gandalf"
+  },
+  {
+    "id": "expand-lotr-012",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Welche Stadt ist Gondors Hauptstadt während des Ringkriegs?",
+    "answers": [
+      "Minas Tirith",
+      "Edoras",
+      "Bree",
+      "Dol Amroth"
+    ],
+    "note": "Die Weiße Stadt liegt am Fuß des Mindolluin.",
+    "source": "https://tolkiengateway.net/wiki/Minas_Tirith",
+    "subject": "minas"
+  },
+  {
+    "id": "expand-lotr-013",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Wie heißen die sehenden Steine Mittelerdes?",
+    "answers": [
+      "Palantíri",
+      "Silmaril",
+      "Mallorn",
+      "Ithildin"
+    ],
+    "note": "Mit ihnen lassen sich ferne Orte sehen.",
+    "source": "https://tolkiengateway.net/wiki/Palant%C3%ADri",
+    "subject": "stones"
+  },
+  {
+    "id": "expand-lotr-014",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Welche Frau heiratet Aragorn nach dem Ringkrieg?",
+    "answers": [
+      "Arwen",
+      "Éowyn",
+      "Galadriel",
+      "Goldbeere"
+    ],
+    "note": "Arwen ist Elronds Tochter.",
+    "source": "https://tolkiengateway.net/wiki/Aragorn",
+    "subject": "aragorn"
+  },
+  {
+    "id": "expand-lotr-015",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Welches Wort öffnet das Westtor von Moria?",
+    "answers": [
+      "Mellon",
+      "Mellorn",
+      "Mithrandir",
+      "Mordor"
+    ],
+    "note": "Mellon bedeutet auf Sindarin „Freund“.",
+    "source": "https://tolkiengateway.net/wiki/Doors_of_Durin",
+    "subject": "doors"
+  },
+  {
+    "id": "expand-aha-001",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Aus welchem Land stammt a-ha?",
+    "answers": [
+      "Norwegen",
+      "Schweden",
+      "Dänemark",
+      "Finnland"
+    ],
+    "note": "a-ha wurde in Oslo gegründet.",
+    "source": "https://en.wikipedia.org/wiki/A-ha",
+    "subject": "band"
+  },
+  {
+    "id": "expand-aha-002",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Wer ist der Sänger von a-ha?",
+    "answers": [
+      "Morten Harket",
+      "Magne Furuholmen",
+      "Pål Waaktaar-Savoy",
+      "Benny Andersson"
+    ],
+    "note": "Morten Harket übernimmt den Leadgesang.",
+    "source": "https://en.wikipedia.org/wiki/A-ha",
+    "subject": "band"
+  },
+  {
+    "id": "expand-aha-003",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Wie viele Mitglieder bilden die Stammbesetzung von a-ha?",
+    "answers": [
+      "Drei",
+      "Vier",
+      "Fünf",
+      "Zwei"
+    ],
+    "note": "Das Trio besteht aus Morten, Magne und Pål.",
+    "source": "https://en.wikipedia.org/wiki/A-ha",
+    "subject": "band"
+  },
+  {
+    "id": "expand-aha-004",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Welcher a-ha-Hit wurde durch ein Video mit Bleistiftzeichnungen berühmt?",
+    "answers": [
+      "Take On Me",
+      "Cry Wolf",
+      "Touchy!",
+      "Summer Moved On"
+    ],
+    "note": "Das Video verbindet Realfilm und gezeichnete Szenen.",
+    "source": "https://en.wikipedia.org/wiki/Take_On_Me",
+    "subject": "take"
+  },
+  {
+    "id": "expand-aha-005",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Wie heißt das Debütalbum von a-ha?",
+    "answers": [
+      "Hunting High and Low",
+      "Scoundrel Days",
+      "Lifelines",
+      "Analogue"
+    ],
+    "note": "Das erste Studioalbum erschien 1985.",
+    "source": "https://en.wikipedia.org/wiki/Hunting_High_and_Low",
+    "subject": "hunting"
+  },
+  {
+    "id": "expand-aha-006",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Welches Instrument spielt Magne Furuholmen hauptsächlich in der Band?",
+    "answers": [
+      "Keyboards",
+      "Schlagzeug",
+      "Saxofon",
+      "Cello"
+    ],
+    "note": "Magne prägt den Keyboardklang der Band.",
+    "source": "https://en.wikipedia.org/wiki/A-ha",
+    "subject": "band"
+  },
+  {
+    "id": "expand-aha-007",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Welcher Musiker spielt bei a-ha Gitarre und schrieb viele Songs?",
+    "answers": [
+      "Pål Waaktaar-Savoy",
+      "Morten Harket",
+      "Alan Tarney",
+      "Steve Barron"
+    ],
+    "note": "Pål ist Gitarrist und einer der Songwriter.",
+    "source": "https://en.wikipedia.org/wiki/A-ha",
+    "subject": "band"
+  },
+  {
+    "id": "expand-aha-008",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Für welche Filmreihe nahm a-ha 1987 einen Titelsong auf?",
+    "answers": [
+      "James Bond",
+      "Indiana Jones",
+      "Zurück in die Zukunft",
+      "Rocky"
+    ],
+    "note": "Der Song heißt „The Living Daylights“.",
+    "source": "https://en.wikipedia.org/wiki/The_Living_Daylights_(song)",
+    "subject": "bond"
+  },
+  {
+    "id": "expand-aha-009",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Wie heißt das zweite Studioalbum von a-ha?",
+    "answers": [
+      "Scoundrel Days",
+      "Memorial Beach",
+      "Foot of the Mountain",
+      "Cast in Steel"
+    ],
+    "note": "Es folgte 1986 auf das Debüt.",
+    "source": "https://en.wikipedia.org/wiki/Scoundrel_Days",
+    "subject": "scoundrel"
+  },
+  {
+    "id": "expand-aha-010",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Welchen Song der Everly Brothers coverte a-ha 1990?",
+    "answers": [
+      "Crying in the Rain",
+      "Bye Bye Love",
+      "Wake Up Little Susie",
+      "All I Have to Do Is Dream"
+    ],
+    "note": "Das Cover eröffnet „East of the Sun, West of the Moon“.",
+    "source": "https://en.wikipedia.org/wiki/East_of_the_Sun,_West_of_the_Moon",
+    "subject": "east"
+  },
+  {
+    "id": "expand-aha-011",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Mit welchem Song erreichte a-ha 1986 Platz eins in Großbritannien?",
+    "answers": [
+      "The Sun Always Shines on T.V.",
+      "Hunting High and Low",
+      "Cry Wolf",
+      "Manhattan Skyline"
+    ],
+    "note": "Der Titel führte die britischen Singlecharts an.",
+    "source": "https://en.wikipedia.org/wiki/Hunting_High_and_Low",
+    "subject": "hunting"
+  },
+  {
+    "id": "expand-aha-012",
+    "cat": "aha",
+    "tier": 2,
+    "q": "In welche Stadt zog die Band in ihrer frühen Karriere, um international Fuß zu fassen?",
+    "answers": [
+      "London",
+      "Paris",
+      "New York",
+      "Berlin"
+    ],
+    "note": "In London arbeitete das Trio an Demos und einem Plattenvertrag.",
+    "source": "https://a-ha.com/story",
+    "subject": "story"
+  },
+  {
+    "id": "expand-aha-013",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Auf welchem Album erschien „Manhattan Skyline“ ursprünglich?",
+    "answers": [
+      "Scoundrel Days",
+      "Lifelines",
+      "Analogue",
+      "Memorial Beach"
+    ],
+    "note": "Der Song gehört zum zweiten Studioalbum.",
+    "source": "https://en.wikipedia.org/wiki/Scoundrel_Days",
+    "subject": "scoundrel"
+  },
+  {
+    "id": "expand-aha-014",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Welchen Untertitel trägt das MTV-Unplugged-Album von 2017?",
+    "answers": [
+      "Summer Solstice",
+      "Winter Lights",
+      "Northern Echoes",
+      "Midnight Session"
+    ],
+    "note": "Die akustischen Aufnahmen entstanden zur Sommersonnenwende.",
+    "source": "https://en.wikipedia.org/wiki/MTV_Unplugged_%E2%80%93_Summer_Solstice",
+    "subject": "unplugged"
+  },
+  {
+    "id": "expand-aha-015",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Welches a-ha-Album erschien 2022 mit einem begleitenden Film?",
+    "answers": [
+      "True North",
+      "Cast in Steel",
+      "Foot of the Mountain",
+      "Minor Earth Major Sky"
+    ],
+    "note": "Das Projekt verbindet neue Musik mit Bildern aus Nordnorwegen.",
+    "source": "https://en.wikipedia.org/wiki/True_North_(A-ha_album)",
+    "subject": "north"
+  }
+]);
+HARD_BANK.push(...[
+  {
+    "id": "hard-expand-lotr-016",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Welchen Namen trägt Gandalfs Elbenring?",
+    "answers": [
+      "Narya",
+      "Nenya",
+      "Vilya",
+      "Barahir"
+    ],
+    "note": "Narya ist der Ring des Feuers.",
+    "source": "https://tolkiengateway.net/wiki/Three_Rings",
+    "subject": "rings"
+  },
+  {
+    "id": "hard-expand-lotr-017",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Wie hieß Aragorn als Kind in Bruchtal?",
+    "answers": [
+      "Estel",
+      "Elessar",
+      "Thorongil",
+      "Telcontar"
+    ],
+    "note": "Estel bedeutet „Hoffnung“.",
+    "source": "https://tolkiengateway.net/wiki/Aragorn",
+    "subject": "aragorn"
+  },
+  {
+    "id": "hard-expand-lotr-018",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Wer baute die Türen von Durin und nannte sich in der Inschrift ihr Schöpfer?",
+    "answers": [
+      "Narvi",
+      "Durin VI.",
+      "Fëanor",
+      "Telchar"
+    ],
+    "note": "Der Zwerg Narvi fertigte die Türen.",
+    "source": "https://tolkiengateway.net/wiki/Doors_of_Durin",
+    "subject": "doors"
+  },
+  {
+    "id": "hard-expand-lotr-019",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Wie hieß Minas Tirith früher?",
+    "answers": [
+      "Minas Anor",
+      "Minas Ithil",
+      "Osgiliath",
+      "Annúminas"
+    ],
+    "note": "Minas Anor bedeutet „Turm der Sonne“.",
+    "source": "https://tolkiengateway.net/wiki/Minas_Tirith",
+    "subject": "minas"
+  },
+  {
+    "id": "hard-expand-lotr-020",
+    "cat": "lotr",
+    "tier": 0,
+    "q": "Wer ist Kankras Mutter?",
+    "answers": [
+      "Ungoliant",
+      "Melian",
+      "Varda",
+      "Yavanna"
+    ],
+    "note": "Kankra ist eine Nachfahrin Ungoliants.",
+    "source": "https://tolkiengateway.net/wiki/Shelob",
+    "subject": "shelob"
+  },
+  {
+    "id": "hard-expand-lotr-021",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Im Roman: Wie heißt Tom Bombadils Frau?",
+    "answers": [
+      "Goldbeere",
+      "Nimrodel",
+      "Rosie",
+      "Finduilas"
+    ],
+    "note": "Goldbeere wird als Tochter der Flussfrau beschrieben.",
+    "source": "https://tolkiengateway.net/wiki/Tom_Bombadil",
+    "subject": "tom"
+  },
+  {
+    "id": "hard-expand-lotr-022",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Wie heißt der goldene Saal in Edoras?",
+    "answers": [
+      "Meduseld",
+      "Orthanc",
+      "Menegroth",
+      "Barad-dûr"
+    ],
+    "note": "Meduseld ist die Halle der Könige Rohans.",
+    "source": "https://tolkiengateway.net/wiki/Rohan",
+    "subject": "rohan"
+  },
+  {
+    "id": "hard-expand-lotr-023",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Wer fand den Ring beim Fischen, bevor Sméagol ihn an sich nahm?",
+    "answers": [
+      "Déagol",
+      "Isildur",
+      "Bilbo",
+      "Sam"
+    ],
+    "note": "Sméagol tötete Déagol und nahm ihm den Ring ab.",
+    "source": "https://tolkiengateway.net/wiki/One_Ring",
+    "subject": "ring"
+  },
+  {
+    "id": "hard-expand-lotr-024",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Wer übergab Gandalf den Ring Narya?",
+    "answers": [
+      "Círdan",
+      "Elendil",
+      "Thranduil",
+      "Celeborn"
+    ],
+    "note": "Círdan vertraute Gandalf den Ring bei seiner Ankunft an.",
+    "source": "https://tolkiengateway.net/wiki/Gandalf",
+    "subject": "gandalf"
+  },
+  {
+    "id": "hard-expand-lotr-025",
+    "cat": "lotr",
+    "tier": 1,
+    "q": "Welcher Name bezeichnet Baumbart auch auf Sindarin?",
+    "answers": [
+      "Fangorn",
+      "Fingon",
+      "Finrod",
+      "Finarfin"
+    ],
+    "note": "Fangorn ist sowohl sein Name als auch der Name seines Waldes.",
+    "source": "https://tolkiengateway.net/wiki/Treebeard",
+    "subject": "tree"
+  },
+  {
+    "id": "hard-expand-lotr-026",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Wer schrieb die Zeichen auf die Türen von Durin?",
+    "answers": [
+      "Celebrimbor",
+      "Celebrían",
+      "Celeborn",
+      "Círdan"
+    ],
+    "note": "Celebrimbor fügte die Schrift zu Narvis Werk hinzu.",
+    "source": "https://tolkiengateway.net/wiki/Doors_of_Durin",
+    "subject": "doors"
+  },
+  {
+    "id": "hard-expand-lotr-027",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Welchen Namen trägt Galadriels Elbenring?",
+    "answers": [
+      "Nenya",
+      "Narya",
+      "Vilya",
+      "Anglachel"
+    ],
+    "note": "Nenya wird auch der Ring des Wassers genannt.",
+    "source": "https://tolkiengateway.net/wiki/Three_Rings",
+    "subject": "rings"
+  },
+  {
+    "id": "hard-expand-lotr-028",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Unter welchem Decknamen diente Aragorn einst in Rohan und Gondor?",
+    "answers": [
+      "Thorongil",
+      "Estel",
+      "Elessar",
+      "Strider"
+    ],
+    "note": "Thorongil bedeutet „Adler des Sterns“.",
+    "source": "https://tolkiengateway.net/wiki/Aragorn",
+    "subject": "aragorn"
+  },
+  {
+    "id": "hard-expand-lotr-029",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Wie viele Palantíri brachten Elendil und seine Söhne aus Númenor nach Mittelerde?",
+    "answers": [
+      "Sieben",
+      "Drei",
+      "Fünf",
+      "Neun"
+    ],
+    "note": "Sieben sehende Steine kamen in die Reiche im Exil.",
+    "source": "https://tolkiengateway.net/wiki/Palant%C3%ADri",
+    "subject": "stones"
+  },
+  {
+    "id": "hard-expand-lotr-030",
+    "cat": "lotr",
+    "tier": 2,
+    "q": "Im Roman: Was geschieht, als Tom Bombadil den Einen Ring aufsetzt?",
+    "answers": [
+      "Er bleibt sichtbar",
+      "Er verschwindet",
+      "Er verwandelt sich",
+      "Er verliert seine Stimme"
+    ],
+    "note": "Der Ring macht Tom nicht unsichtbar.",
+    "source": "https://tolkiengateway.net/wiki/Tom_Bombadil",
+    "subject": "tom"
+  },
+  {
+    "id": "hard-expand-aha-016",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Wer führte beim berühmten gezeichneten „Take On Me“-Video Regie?",
+    "answers": [
+      "Steve Barron",
+      "David Fincher",
+      "Michel Gondry",
+      "Anton Corbijn"
+    ],
+    "note": "Steve Barron inszenierte den Clip von 1985.",
+    "source": "https://en.wikipedia.org/wiki/Take_On_Me",
+    "subject": "take"
+  },
+  {
+    "id": "hard-expand-aha-017",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Wie hieß die Band von Pål und Magne vor a-ha?",
+    "answers": [
+      "Bridges",
+      "Savoy",
+      "Souldier Blue",
+      "Fra Lippo Lippi"
+    ],
+    "note": "Beide spielten vor a-ha bei Bridges.",
+    "source": "https://a-ha.com/story",
+    "subject": "story"
+  },
+  {
+    "id": "hard-expand-aha-018",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Auf welcher norwegischen Insel wurde „MTV Unplugged: Summer Solstice“ aufgenommen?",
+    "answers": [
+      "Giske",
+      "Hitra",
+      "Senja",
+      "Karmøy"
+    ],
+    "note": "Die Aufnahmen fanden auf Giske statt.",
+    "source": "https://en.wikipedia.org/wiki/MTV_Unplugged_%E2%80%93_Summer_Solstice",
+    "subject": "unplugged"
+  },
+  {
+    "id": "hard-expand-aha-019",
+    "cat": "aha",
+    "tier": 0,
+    "q": "Welcher Bond-Komponist schrieb „The Living Daylights“ mit Pål Waaktaar?",
+    "answers": [
+      "John Barry",
+      "David Arnold",
+      "Thomas Newman",
+      "Hans Zimmer"
+    ],
+    "note": "John Barry arbeitete mit Pål am Titelsong.",
+    "source": "https://en.wikipedia.org/wiki/The_Living_Daylights_(song)",
+    "subject": "bond"
+  },
+  {
+    "id": "hard-expand-aha-020",
+    "cat": "aha",
+    "tier": 0,
+    "q": "In welchem Studio von Prince entstand ein großer Teil von „Memorial Beach“?",
+    "answers": [
+      "Paisley Park",
+      "Abbey Road",
+      "Hansa",
+      "Sun Studio"
+    ],
+    "note": "Die Band nahm in Princes Paisley Park Studios auf.",
+    "source": "https://en.wikipedia.org/wiki/Memorial_Beach",
+    "subject": "memorial"
+  },
+  {
+    "id": "hard-expand-aha-021",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Wie heißt der letzte Titel der ursprünglichen „Hunting High and Low“-LP?",
+    "answers": [
+      "Here I Stand and Face the Rain",
+      "The Blue Sky",
+      "Love Is Reason",
+      "Train of Thought"
+    ],
+    "note": "Dieser Song beschließt das ursprüngliche Album.",
+    "source": "https://en.wikipedia.org/wiki/Hunting_High_and_Low",
+    "subject": "hunting"
+  },
+  {
+    "id": "hard-expand-aha-022",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Welcher Produzent betreute die internationale Hitaufnahme von „Take On Me“ von 1985?",
+    "answers": [
+      "Alan Tarney",
+      "Tony Mansfield",
+      "Trevor Horn",
+      "Stephen Hague"
+    ],
+    "note": "Alan Tarney produzierte die erfolgreiche Neuaufnahme.",
+    "source": "https://en.wikipedia.org/wiki/Take_On_Me",
+    "subject": "take"
+  },
+  {
+    "id": "hard-expand-aha-023",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Welcher Titel eröffnet „Memorial Beach“?",
+    "answers": [
+      "Dark Is the Night for All",
+      "Move to Memphis",
+      "Angel in the Snow",
+      "Lie Down in Darkness"
+    ],
+    "note": "Der Song steht am Anfang des Albums von 1993.",
+    "source": "https://en.wikipedia.org/wiki/Memorial_Beach",
+    "subject": "memorial"
+  },
+  {
+    "id": "hard-expand-aha-024",
+    "cat": "aha",
+    "tier": 1,
+    "q": "In welcher Stadt wurde das Film- und Musikprojekt „True North“ aufgenommen?",
+    "answers": [
+      "Bodø",
+      "Bergen",
+      "Trondheim",
+      "Stavanger"
+    ],
+    "note": "Die Aufnahmen entstanden nördlich des Polarkreises.",
+    "source": "https://en.wikipedia.org/wiki/True_North_(A-ha_album)",
+    "subject": "north"
+  },
+  {
+    "id": "hard-expand-aha-025",
+    "cat": "aha",
+    "tier": 1,
+    "q": "Welcher Song steht am Ende der ursprünglichen „Scoundrel Days“-LP?",
+    "answers": [
+      "Soft Rains of April",
+      "October",
+      "The Swing of Things",
+      "Maybe, Maybe"
+    ],
+    "note": "„Soft Rains of April“ beschließt das Album.",
+    "source": "https://en.wikipedia.org/wiki/Scoundrel_Days",
+    "subject": "scoundrel"
+  },
+  {
+    "id": "hard-expand-aha-026",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Welche Band wurde beim Unplugged-Konzert mit „The Killing Moon“ gecovert?",
+    "answers": [
+      "Echo & the Bunnymen",
+      "The Cure",
+      "Depeche Mode",
+      "New Order"
+    ],
+    "note": "Ian McCulloch war bei diesem Song als Gast dabei.",
+    "source": "https://en.wikipedia.org/wiki/MTV_Unplugged_%E2%80%93_Summer_Solstice",
+    "subject": "unplugged"
+  },
+  {
+    "id": "hard-expand-aha-027",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Welchen frühen Titel hatte „Take On Me“ während seiner Entwicklung?",
+    "answers": [
+      "Lesson One",
+      "First Light",
+      "Blue Morning",
+      "On the Run"
+    ],
+    "note": "Unter „Lesson One“ entstand bereits eine frühe Demo.",
+    "source": "https://a-ha.com/story",
+    "subject": "story"
+  },
+  {
+    "id": "hard-expand-aha-028",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Welcher Song beschließt das ursprüngliche Album „East of the Sun, West of the Moon“?",
+    "answers": [
+      "(Seemingly) Nonstop July",
+      "Rolling Thunder",
+      "The Way We Talk",
+      "Slender Frame"
+    ],
+    "note": "„(Seemingly) Nonstop July“ ist der elfte Titel.",
+    "source": "https://en.wikipedia.org/wiki/East_of_the_Sun,_West_of_the_Moon",
+    "subject": "east"
+  },
+  {
+    "id": "hard-expand-aha-029",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Wie heißt der zweite Song auf der ursprünglichen „Scoundrel Days“-LP?",
+    "answers": [
+      "The Swing of Things",
+      "Cry Wolf",
+      "Manhattan Skyline",
+      "Weight of the Wind"
+    ],
+    "note": "Der Song folgt direkt auf den Titelsong.",
+    "source": "https://en.wikipedia.org/wiki/Scoundrel_Days",
+    "subject": "scoundrel"
+  },
+  {
+    "id": "hard-expand-aha-030",
+    "cat": "aha",
+    "tier": 2,
+    "q": "Wie heißt das Orchester, mit dem a-ha „True North“ aufnahm?",
+    "answers": [
+      "Arctic Philharmonic",
+      "London Symphony Orchestra",
+      "Berliner Philharmoniker",
+      "Oslo Philharmonic"
+    ],
+    "note": "Die Arctic Philharmonic begleitet die Band auf dem Projekt.",
+    "source": "https://en.wikipedia.org/wiki/True_North_(A-ha_album)",
+    "subject": "north"
+  }
+]);
