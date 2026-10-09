@@ -17,3 +17,12 @@
 .game-top{gap:12px;flex-wrap:wrap}
 .question-meta{flex-wrap:wrap}
 @media(max-width:650px){.category{min-height:60px;padding:10px 8px}.lobby .categories{margin-bottom:14px}.mix-title{margin-bottom:10px}}
+
+/* Keep the player's choice prominent before and after locking it in. */
+.answer-copy{min-width:0;flex:1;overflow-wrap:anywhere}
+.answer-selection{display:block;margin-top:4px;font-size:11px;line-height:1.25;font-weight:700;letter-spacing:.3px}
+.answer.selected,.answer.selected:hover:not(:disabled){background:linear-gradient(115deg,#ffe5a8,#efbd61);color:#171723;border-color:#fff0c9;box-shadow:inset 4px 0 0 #fff5dd,0 0 0 2px #e8c78a,0 4px 18px #e8c78a30;font-weight:700}
+.answer.selected .letter{color:inherit}
+.answer.selected.correct{background:linear-gradient(115deg,#b4f2d7,#72d5ae);color:#092c23;border-color:#edfff7;box-shadow:inset 4px 0 0 #edfff7,0 0 0 2px #72d5ae}
+.answer.selected.wrong{background:linear-gradient(115deg,#ffd0d5,#f295a4);color:#3d1020;border-color:#fff0f2;box-shadow:inset 4px 0 0 #fff0f2,0 0 0 2px #f295a4}
+.answer.selected:disabled{opacity:1;-webkit-text-fill-color:currentColor}
