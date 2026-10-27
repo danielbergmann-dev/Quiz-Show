@@ -64,7 +64,7 @@ const BANK=[
     "id": "easy-cw-5",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Was war die NATO?",
+    "q": "Was war die NATO im Kalten Krieg?",
     "answers": [
       "Ein westliches Verteidigungsbündnis",
       "Eine sowjetische Partei",
