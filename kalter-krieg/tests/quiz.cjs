@@ -4,7 +4,7 @@ const saved={};function boot(blocked=false){const els={};const c=vm.createContex
 const c=boot();vm.runInContext(`
 const all=[...BANK,...HARD_BANK];
 if(all.length!==60||new Set(all.map(q=>q.id)).size!==60||new Set(all.map(q=>q.q)).size!==60)throw Error('Counts');
-for(const q of all)if(q.cat!=='coldwar'||q.answers.length!==4||new Set(q.answers).size!==4||!q.note||!q.source.startsWith('https://'))throw Error('Question data');
+for(const q of all)if(q.cat!=='coldwar'||q.answers.length!==4||new Set(q.answers).size!==4||!q.note||!q.sourceLabel.startsWith('Deine Übersicht · Folie '))throw Error('Question data');
 for(const mode of [false,true]){
 expertMode=mode;seenQuestions={};seenSequence=0;
 const usedIds=new Set();

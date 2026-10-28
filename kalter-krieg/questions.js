@@ -1,905 +1,906 @@
-// Correct answer first; shuffled for play. Original educational questions.
-const BANK=[
+// Lernfragen zur bereitgestellten Übersicht Kalter Krieg.
+// answers[0] ist richtig; Foliennummern entsprechen den PDF-Seiten.
+const BANK = [
   {
-    "id": "easy-cw-1",
+    "id": "easy-slides-v1-01",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Welche zwei Supermächte prägten den Kalten Krieg?",
+    "subject": "slides-2",
+    "q": "Wer regierte Russland vor den Revolutionen von 1917?",
     "answers": [
-      "USA und Sowjetunion",
-      "Frankreich und China",
-      "Deutschland und Japan",
-      "Großbritannien und Italien"
+      "Der Zar",
+      "Ein gewählter Bundeskanzler",
+      "Die NATO",
+      "Ein amerikanischer Präsident"
     ],
-    "note": "Um beide Supermächte bildeten sich rivalisierende Machtblöcke.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg.html",
-    "subject": "war"
+    "note": "Vor 1917 herrschte in Russland der Zar. Große soziale Ungleichheit sorgte für Unzufriedenheit.",
+    "sourceLabel": "Deine Übersicht · Folie 2"
   },
   {
-    "id": "easy-cw-2",
+    "id": "easy-slides-v1-02",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Warum heißt der Konflikt „Kalter Krieg“?",
+    "subject": "slides-2",
+    "q": "Was verschärfte 1914–1917 die Unzufriedenheit in Russland?",
     "answers": [
-      "Die Supermächte vermieden einen direkten großen Krieg gegeneinander",
-      "Alle Kämpfe fanden im Winter statt",
-      "Es wurden keine Waffen gebaut",
-      "Der Konflikt betraf nur die Arktis"
+      "Krieg, Hunger und hohe Verluste",
+      "Steigender Wohlstand für alle",
+      "Die deutsche Wiedervereinigung",
+      "Der Marshallplan"
     ],
-    "note": "„Kalt“ bedeutet nicht friedlich: Es gab Kriege in anderen Ländern.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg.html",
-    "subject": "war"
+    "note": "Der Erste Weltkrieg brachte hohe Verluste, Hunger und wirtschaftliche Not. Dadurch wuchs die Kritik am Zaren.",
+    "sourceLabel": "Deine Übersicht · Folie 2"
   },
   {
-    "id": "easy-cw-3",
+    "id": "easy-slides-v1-03",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Wozu diente der Marshallplan vor allem?",
+    "subject": "slides-2",
+    "q": "Was geschah in der Februarrevolution 1917?",
     "answers": [
-      "Zum wirtschaftlichen Wiederaufbau Europas",
-      "Zum Bau der Berliner Mauer",
-      "Zur Gründung der DDR",
-      "Zur Auflösung der UNO"
+      "Der Zar dankte ab",
+      "Die NATO entstand",
+      "Die UdSSR wurde aufgelöst",
+      "Die Berliner Mauer fiel"
     ],
-    "note": "Wirtschaftliche Stabilität sollte auch kommunistischen Einfluss begrenzen.",
-    "source": "https://www.bpb.de/shop/zeitschriften/izpb/internationale-beziehungen-i-245/10328/ursachen-und-entstehung-des-kalten-krieges/",
-    "subject": "origins"
+    "note": "Im Februar 1917 dankte Nikolaus II. ab. Eine Übergangsregierung übernahm die Macht.",
+    "sourceLabel": "Deine Übersicht · Folie 2"
   },
   {
-    "id": "easy-cw-4",
+    "id": "easy-slides-v1-04",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Was bedeutet „Containment“ im Kalten Krieg?",
+    "subject": "slides-2",
+    "q": "Wer übernahm im Oktober 1917 die Macht?",
     "answers": [
-      "Eindämmung kommunistischer Ausbreitung",
-      "Auflösung aller Grenzen",
-      "Vereinigung aller Armeen",
-      "Abschaffung des Welthandels"
+      "Die Bolschewiki unter Lenin",
+      "Die NATO unter Truman",
+      "Die Zarenfamilie",
+      "Die UNO"
     ],
-    "note": "Die USA wollten eine weitere Ausdehnung sowjetischen Einflusses verhindern.",
-    "source": "https://www.bpb.de/shop/zeitschriften/izpb/internationale-beziehungen-i-245/10328/ursachen-und-entstehung-des-kalten-krieges/",
-    "subject": "origins"
+    "note": "Im Oktober 1917 übernahmen die Bolschewiki unter Lenin die Macht.",
+    "sourceLabel": "Deine Übersicht · Folie 2"
   },
   {
-    "id": "easy-cw-5",
+    "id": "easy-slides-v1-05",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Was war die NATO im Kalten Krieg?",
+    "subject": "slides-2",
+    "q": "Welches Motto verwendeten die Bolschewiki?",
     "answers": [
-      "Ein westliches Verteidigungsbündnis",
-      "Eine sowjetische Partei",
-      "Ein europäisches Parlament",
-      "Eine Währungsunion"
+      "Frieden, Land und Brot",
+      "Einigkeit, Recht und Freiheit",
+      "Wandel durch Annäherung",
+      "Freiheit statt Planwirtschaft"
     ],
-    "note": "Die NATO wurde 1949 gegründet.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/weg-nach-westen/militaerallianzen",
-    "subject": "nato"
+    "note": "Mit „Frieden, Land und Brot“ griffen die Bolschewiki zentrale Bedürfnisse der Bevölkerung auf.",
+    "sourceLabel": "Deine Übersicht · Folie 2"
   },
   {
-    "id": "easy-cw-6",
+    "id": "easy-slides-v1-06",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Welcher Staat führte den Ostblock?",
+    "subject": "slides-3",
+    "q": "Wann wurde die Sowjetunion gegründet?",
     "answers": [
-      "Die Sowjetunion",
-      "Kanada",
-      "Frankreich",
-      "Die Bundesrepublik"
-    ],
-    "note": "Die UdSSR besaß im Ostblock eine beherrschende Stellung.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg.html",
-    "subject": "war"
-  },
-  {
-    "id": "easy-cw-7",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Wie wurde West-Berlin während der Blockade versorgt?",
-    "answers": [
-      "Durch eine Luftbrücke",
-      "Durch einen Tunnel nach Hamburg",
-      "Nur durch sowjetische Züge",
-      "Durch eine neue Seestraße"
-    ],
-    "note": "Die Westalliierten brachten lebenswichtige Güter mit Flugzeugen.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre/doppelte-staatsgruendung/berlin-blockade-1948.html",
-    "subject": "berlin"
-  },
-  {
-    "id": "easy-cw-8",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "In welchem Jahr begann der Bau der Berliner Mauer?",
-    "answers": [
-      "1961",
+      "1922",
+      "1914",
       "1945",
-      "1949",
-      "1989"
+      "1949"
     ],
-    "note": "Am 13. August 1961 begann die Abriegelung.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/mauerbau/13-august-1961-mauerbau.html",
-    "subject": "wall"
+    "note": "Die Sowjetunion wurde 1922 gegründet, nach Revolution und Bürgerkrieg.",
+    "sourceLabel": "Deine Übersicht · Folie 3"
   },
   {
-    "id": "easy-cw-9",
+    "id": "easy-slides-v1-07",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Welche Fluchtbewegung sollte die Mauer hauptsächlich stoppen?",
+    "subject": "slides-3",
+    "q": "Gegen wen kämpfte die UdSSR von 1941 bis 1945?",
     "answers": [
-      "Aus der DDR in den Westen",
-      "Aus Frankreich in die DDR",
-      "Aus den USA nach Berlin",
-      "Aus Polen in die Sowjetunion"
+      "Hitlerdeutschland",
+      "Die NATO",
+      "Die DDR",
+      "Den Warschauer Pakt"
     ],
-    "note": "Die SED wollte die Massenflucht über West-Berlin unterbinden.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/mauerbau/13-august-1961-mauerbau.html",
-    "subject": "wall"
+    "note": "Die UdSSR kämpfte von 1941 bis 1945 gegen Hitlerdeutschland und trug entscheidend zu dessen Niederlage bei.",
+    "sourceLabel": "Deine Übersicht · Folie 3"
   },
   {
-    "id": "easy-cw-10",
+    "id": "easy-slides-v1-08",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Welche Krise brachte die Welt 1962 an den Rand eines Atomkriegs?",
+    "subject": "slides-4",
+    "q": "Welche beiden Staaten wurden nach 1945 zu Supermächten?",
     "answers": [
-      "Die Kubakrise",
-      "Die Suezkrise",
-      "Die Ölkrise",
-      "Die Berlin-Blockade"
+      "USA und UdSSR",
+      "Italien und Spanien",
+      "Belgien und Dänemark",
+      "Österreich und Schweiz"
     ],
-    "note": "Sowjetische Atomraketen auf Kuba lösten die Zuspitzung aus.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/kuba-krise.html",
-    "subject": "cuba"
+    "note": "Nach dem Zweiten Weltkrieg prägten die USA und die UdSSR als Supermächte die internationale Ordnung.",
+    "sourceLabel": "Deine Übersicht · Folie 4"
   },
   {
-    "id": "easy-cw-11",
+    "id": "easy-slides-v1-09",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-8",
+    "q": "Welcher Wert gehört zum dargestellten US-amerikanischen Ideal?",
+    "answers": [
+      "Individuelle Freiheit",
+      "Uneingeschränkte Zarenherrschaft",
+      "Abschaffung jeglichen Privateigentums",
+      "Erbliche Parteiführung"
+    ],
+    "note": "Zum amerikanischen Selbstbild gehören Demokratie, individuelle Freiheit und das Recht auf Eigentum.",
+    "sourceLabel": "Deine Übersicht · Folie 8"
+  },
+  {
+    "id": "easy-slides-v1-10",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-8",
+    "q": "Was betont das kommunistische Ideal in der Übersicht?",
+    "answers": [
+      "Das Kollektiv und die Gemeinschaft",
+      "Die Herrschaft eines Zaren",
+      "Den Vorrang eines Königshauses",
+      "Die Rückkehr zum Kolonialreich"
+    ],
+    "note": "Das kommunistische Ideal betont das Kollektiv und die Gemeinschaft aller Bürger.",
+    "sourceLabel": "Deine Übersicht · Folie 8"
+  },
+  {
+    "id": "easy-slides-v1-11",
     "cat": "coldwar",
     "tier": 1,
-    "q": "Wer war während der Kubakrise US-Präsident?",
+    "subject": "slides-9",
+    "q": "Welchen Zeitraum nennt die Übersicht für den Kalten Krieg?",
     "answers": [
+      "1947–1991",
+      "1914–1918",
+      "1939–1945",
+      "1961–1975"
+    ],
+    "note": "Die Übersicht setzt den Beginn 1947 an und nennt 1991 als Ende des Kalten Krieges.",
+    "sourceLabel": "Deine Übersicht · Folie 9"
+  },
+  {
+    "id": "easy-slides-v1-12",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-13",
+    "q": "Was bedeutet eine „bipolare Welt“?",
+    "answers": [
+      "Eine Welt mit zwei dominierenden Machtzentren",
+      "Eine Welt ohne Staaten",
+      "Eine Welt mit nur einem Bündnis",
+      "Eine Welt mit zwei Kontinenten"
+    ],
+    "note": "„Bipolar“ bezeichnet zwei dominierende Machtzentren: hier die USA und die UdSSR mit ihren Verbündeten.",
+    "sourceLabel": "Deine Übersicht · Folie 13"
+  },
+  {
+    "id": "easy-slides-v1-13",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-11",
+    "q": "Was war das Ziel der Containment-Politik?",
+    "answers": [
+      "Den Kommunismus eindämmen",
+      "Die Sowjetunion wirtschaftlich führen",
+      "Die NATO auflösen",
+      "Alle Staaten vereinigen"
+    ],
+    "note": "Containment bedeutet Eindämmung. Die USA wollten eine weitere Ausbreitung des Kommunismus verhindern.",
+    "sourceLabel": "Deine Übersicht · Folie 11"
+  },
+  {
+    "id": "easy-slides-v1-14",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-11",
+    "q": "Wofür war der Marshallplan vorgesehen?",
+    "answers": [
+      "Wiederaufbauhilfe für Europa",
+      "Bau sowjetischer Raketen",
+      "Gründung der Bolschewiki",
+      "Auflösung der USA"
+    ],
+    "note": "Der Marshallplan unterstützte den europäischen Wiederaufbau und sollte Armut sowie politische Instabilität verringern.",
+    "sourceLabel": "Deine Übersicht · Folie 11"
+  },
+  {
+    "id": "easy-slides-v1-15",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-11",
+    "q": "Wer formulierte die Zwei-Lager-Theorie?",
+    "answers": [
+      "Andrei Schdanow",
+      "George Marshall",
       "John F. Kennedy",
-      "Harry S. Truman",
-      "Ronald Reagan",
-      "Richard Nixon"
+      "Michail Gorbatschow"
     ],
-    "note": "Kennedy verhandelte mit Nikita Chruschtschow.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/kuba-krise.html",
-    "subject": "cuba"
+    "note": "Andrei Schdanow teilte die Welt 1947 aus sowjetischer Sicht in zwei gegnerische Lager.",
+    "sourceLabel": "Deine Übersicht · Folie 11"
   },
   {
-    "id": "easy-cw-12",
+    "id": "easy-slides-v1-16",
     "cat": "coldwar",
     "tier": 1,
-    "q": "Was bedeutet „Glasnost“?",
-    "answers": [
-      "Offenheit",
-      "Aufrüstung",
-      "Abschottung",
-      "Planerfüllung"
-    ],
-    "note": "Gorbatschow wollte mehr öffentliche Diskussion ermöglichen.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten/glasnost-und-perestroika.html",
-    "subject": "reform"
-  },
-  {
-    "id": "easy-cw-13",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Was bedeutet „Perestroika“?",
-    "answers": [
-      "Umgestaltung",
-      "Kriegserklärung",
-      "Grenzsperre",
-      "Geheimpolizei"
-    ],
-    "note": "Die Reformen sollten Staat, Wirtschaft und Gesellschaft verändern.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten/glasnost-und-perestroika.html",
-    "subject": "reform"
-  },
-  {
-    "id": "easy-cw-14",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Welcher Politiker steht für Glasnost und Perestroika?",
-    "answers": [
-      "Michail Gorbatschow",
-      "Josef Stalin",
-      "Walter Ulbricht",
-      "Konrad Adenauer"
-    ],
-    "note": "Er wurde 1985 Generalsekretär der sowjetischen Kommunistischen Partei.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten/glasnost-und-perestroika.html",
-    "subject": "reform"
-  },
-  {
-    "id": "easy-cw-15",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Was sollte Entspannungspolitik erreichen?",
-    "answers": [
-      "Spannungen durch Gespräche und Vereinbarungen verringern",
-      "Jeden Kontakt abbrechen",
-      "Alle Bündnisse sofort militärisch besiegen",
-      "Den Handel vollständig stoppen"
-    ],
-    "note": "Entspannung setzte auf Verständigung trotz fortbestehender Gegensätze.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-krisenmanagement/konfrontation-und-annaeherung.html",
-    "subject": "confrontation"
-  },
-  {
-    "id": "easy-cw-16",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "In welchem Jahr entstanden Bundesrepublik und DDR?",
+    "subject": "slides-15",
+    "q": "Wann wurde die NATO gegründet?",
     "answers": [
       "1949",
-      "1945",
-      "1955",
-      "1961"
+      "1917",
+      "1922",
+      "1962"
     ],
-    "note": "Aus den Besatzungszonen entwickelten sich zwei deutsche Staaten.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre.html",
-    "subject": "after"
+    "note": "Die NATO wurde am 4. April 1949 als westliches Verteidigungsbündnis gegründet.",
+    "sourceLabel": "Deine Übersicht · Folie 15"
   },
   {
-    "id": "easy-cw-17",
+    "id": "easy-slides-v1-17",
     "cat": "coldwar",
     "tier": 1,
-    "q": "Welcher Militärallianz trat die Bundesrepublik 1955 bei?",
-    "answers": [
-      "Der NATO",
-      "Dem Warschauer Pakt",
-      "Der UNO-Armee",
-      "Der Roten Armee"
-    ],
-    "note": "Der Beitritt band die Bundesrepublik militärisch an den Westen.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/weg-nach-westen/militaerallianzen",
-    "subject": "nato"
-  },
-  {
-    "id": "easy-cw-18",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Was regelte der Grundlagenvertrag von 1972?",
-    "answers": [
-      "Die Beziehungen zwischen Bundesrepublik und DDR",
-      "Die Gründung der Sowjetunion",
-      "Die Aufteilung Koreas",
-      "Die Einführung des Euro"
-    ],
-    "note": "Beide deutschen Staaten vereinbarten geregelte Beziehungen.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-modernisierung/neue-ostpolitik/grundlagenvertrag",
-    "subject": "treaty"
-  },
-  {
-    "id": "easy-cw-19",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Wie hieß das östliche Militärbündnis unter sowjetischer Führung?",
+    "subject": "slides-15",
+    "q": "Welches Bündnis entstand 1955 unter sowjetischer Führung?",
     "answers": [
       "Warschauer Pakt",
       "NATO",
-      "Europäische Gemeinschaft",
-      "Völkerbund"
+      "Völkerbund",
+      "Europäische Gemeinschaft"
     ],
-    "note": "Das Bündnis entstand 1955 als Gegengewicht zur NATO.",
-    "source": "https://www.bpb.de/kurz-knapp/lexika/das-junge-politik-lexikon/321391/warschauer-pakt/",
-    "subject": "pact"
+    "note": "Der Warschauer Pakt entstand 1955 unter sowjetischer Führung.",
+    "sourceLabel": "Deine Übersicht · Folie 15"
   },
   {
-    "id": "easy-cw-20",
+    "id": "easy-slides-v1-18",
     "cat": "coldwar",
     "tier": 1,
-    "q": "Was war Sputnik 1957?",
+    "subject": "slides-15",
+    "q": "Welchem Militärbündnis gehörte die DDR an?",
     "answers": [
-      "Ein sowjetischer Satellit",
-      "Ein amerikanischer Panzer",
-      "Ein deutscher Friedensvertrag",
-      "Ein britisches U-Boot"
+      "Dem Warschauer Pakt",
+      "Der NATO",
+      "Beiden zugleich",
+      "Keinem der beiden"
     ],
-    "note": "Der Satellitenstart zeigte sowjetische technische Leistungsfähigkeit.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg.html",
-    "subject": "war"
+    "note": "Die DDR gehörte zum Warschauer Pakt, die Bundesrepublik zur NATO.",
+    "sourceLabel": "Deine Übersicht · Folie 15"
   },
   {
-    "id": "easy-cw-21",
+    "id": "easy-slides-v1-19",
     "cat": "coldwar",
-    "tier": 2,
-    "q": "Was begann 1950 mit dem Angriff Nordkoreas auf Südkorea?",
+    "tier": 1,
+    "subject": "slides-14",
+    "q": "Was bedeutet Wettrüsten?",
     "answers": [
-      "Der Koreakrieg",
-      "Der Vietnamkrieg",
-      "Der Zweite Weltkrieg",
-      "Der Afghanistankrieg"
+      "Gegenseitiger Ausbau der Bewaffnung",
+      "Gemeinsame Abschaffung aller Waffen",
+      "Ein Sportwettbewerb",
+      "Ein Handelsabkommen"
     ],
-    "note": "Der Koreakrieg wurde 1953 durch einen Waffenstillstand unterbrochen.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg.html",
-    "subject": "war"
+    "note": "Beim Wettrüsten bauten beide Seiten ihre Bewaffnung aus, auch ihre Atomwaffenbestände.",
+    "sourceLabel": "Deine Übersicht · Folie 14"
   },
   {
-    "id": "easy-cw-22",
+    "id": "easy-slides-v1-20",
     "cat": "coldwar",
-    "tier": 2,
-    "q": "In welcher Stadt wurde 1975 die KSZE-Schlussakte unterzeichnet?",
+    "tier": 1,
+    "subject": "slides-14",
+    "q": "Welche Städte trafen die amerikanischen Atombomben 1945?",
     "answers": [
-      "Helsinki",
-      "Paris",
-      "Rom",
-      "Prag"
+      "Hiroshima und Nagasaki",
+      "Tokio und Kyoto",
+      "Berlin und Dresden",
+      "Moskau und Leningrad"
     ],
-    "note": "Die Schlussakte war ein wichtiger Schritt der Entspannung.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-krisenmanagement/konfrontation-und-annaeherung/ksze.html",
-    "subject": "ksze"
+    "note": "Die USA warfen im August 1945 Atombomben auf Hiroshima und Nagasaki ab.",
+    "sourceLabel": "Deine Übersicht · Folie 14"
   },
   {
-    "id": "easy-cw-23",
+    "id": "easy-slides-v1-21",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Welche Forderung passt zur KSZE-Schlussakte?",
+    "subject": "slides-20",
+    "q": "Wann fand die Kubakrise statt?",
     "answers": [
-      "Menschenrechte achten",
-      "Andere Staaten beliebig angreifen",
-      "Alle Wahlen verbieten",
-      "Grenzen nur mit Gewalt verändern"
+      "Oktober 1962",
+      "Mai 1945",
+      "Juni 1950",
+      "August 1975"
     ],
-    "note": "Die Staaten bekannten sich zu Grundfreiheiten und friedlicher Streitregelung.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-krisenmanagement/konfrontation-und-annaeherung/ksze.html",
-    "subject": "ksze"
+    "note": "Die Kubakrise im Oktober 1962 brachte die Welt an den Rand eines Atomkriegs.",
+    "sourceLabel": "Deine Übersicht · Folie 20"
   },
   {
-    "id": "easy-cw-24",
+    "id": "easy-slides-v1-22",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Wann wurde Deutschland wiedervereinigt?",
+    "subject": "slides-20",
+    "q": "Wer führte die kubanische Revolution von 1959 an?",
     "answers": [
-      "3. Oktober 1990",
-      "9. November 1989",
-      "13. August 1961",
-      "8. Mai 1945"
+      "Fidel Castro",
+      "Lenin",
+      "Breschnew",
+      "Truman"
     ],
-    "note": "Maueröffnung und staatliche Wiedervereinigung sind unterschiedliche Ereignisse.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit",
-    "subject": "end"
+    "note": "Fidel Castro führte die Revolution von 1959 an. Kuba näherte sich anschließend der Sowjetunion an.",
+    "sourceLabel": "Deine Übersicht · Folie 20"
   },
   {
-    "id": "easy-cw-25",
+    "id": "easy-slides-v1-23",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Was verstärkte 1989 den Druck auf die SED-Führung?",
+    "subject": "slides-20",
+    "q": "Welche Seite griff 1950 im Koreakrieg zuerst an?",
     "answers": [
-      "Massenproteste und Flucht",
-      "Ein neuer Kaiser",
-      "Die Einführung des Euro",
-      "Eine britische Besetzung der DDR"
+      "Nordkorea griff Südkorea an",
+      "Südkorea griff Japan an",
+      "Die DDR griff Nordkorea an",
+      "Kuba griff Südkorea an"
     ],
-    "note": "Die Herrschaft verlor zunehmend Rückhalt.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten.html",
-    "subject": "change"
+    "note": "1950 griff Nordkorea Südkorea an. Später griffen weitere Staaten in den Krieg ein.",
+    "sourceLabel": "Deine Übersicht · Folie 20"
   },
   {
-    "id": "easy-cw-26",
+    "id": "easy-slides-v1-24",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Warum verließen viele Menschen die DDR vor dem Mauerbau?",
+    "subject": "slides-20",
+    "q": "Wie endeten die Kämpfe des Koreakriegs 1953 vorläufig?",
     "answers": [
-      "Wegen Unfreiheit und mangelnder Perspektiven",
-      "Weil die DDR keine Städte hatte",
-      "Weil jede Arbeit verboten war",
-      "Weil Reisen in den Westen vorgeschrieben waren"
+      "Mit einem Waffenstillstand",
+      "Mit der Vereinigung Koreas",
+      "Mit der Auflösung Chinas",
+      "Mit dem NATO-Beitritt Nordkoreas"
     ],
-    "note": "Politische und wirtschaftliche Motive wirkten zusammen.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/mauerbau/flucht-und-notaufnahme.html",
-    "subject": "flight"
+    "note": "1953 wurde ein Waffenstillstand geschlossen. Die Teilung Koreas blieb bestehen.",
+    "sourceLabel": "Deine Übersicht · Folie 20"
   },
   {
-    "id": "easy-cw-27",
+    "id": "easy-slides-v1-25",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Wie wurden die Versorgungsflugzeuge der Luftbrücke oft genannt?",
+    "subject": "slides-20",
+    "q": "Wer waren die Vietcong?",
     "answers": [
-      "Rosinenbomber",
-      "Silberpfeile",
-      "Mauersegler",
-      "Ostexpress"
+      "Kommunistische Rebellen in Südvietnam",
+      "Eine amerikanische Partei",
+      "Japanische Besatzungstruppen",
+      "Ein europäisches Bündnis"
     ],
-    "note": "Der Spitzname erinnert an die Hilfe für West-Berlin.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre/doppelte-staatsgruendung/berlin-blockade-1948.html",
-    "subject": "berlin"
+    "note": "Die Übersicht bezeichnet die Vietcong als kommunistische Rebellen im Süden Vietnams.",
+    "sourceLabel": "Deine Übersicht · Folie 20"
   },
   {
-    "id": "easy-cw-28",
+    "id": "easy-slides-v1-26",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Welche Währung wurde 1948 in den Westzonen eingeführt?",
+    "subject": "slides-23",
+    "q": "Was wurde 1972 abgeschlossen?",
     "answers": [
-      "Deutsche Mark",
-      "Euro",
-      "Rubel",
-      "Ostmark"
+      "SALT I",
+      "Der Marshallplan",
+      "Die Truman-Doktrin",
+      "Die Gründung der UdSSR"
     ],
-    "note": "Die Währungsreform war Teil der wirtschaftlichen Neuordnung.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre.html",
-    "subject": "after"
+    "note": "SALT I wurde 1972 abgeschlossen. Es begrenzte die Rüstung, beseitigte aber nicht sämtliche Waffen.",
+    "sourceLabel": "Deine Übersicht · Folie 23"
   },
   {
-    "id": "easy-cw-29",
+    "id": "easy-slides-v1-27",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Wie reagierte die SED-Führung auf Gorbatschows Reformkurs?",
+    "subject": "slides-23",
+    "q": "In welchem Jahr wurde die KSZE-Schlussakte verabschiedet?",
     "answers": [
-      "Sie lehnte grundlegende Reformen ab",
-      "Sie führte sofort freie Wahlen ein",
-      "Sie löste die DDR 1985 auf",
-      "Sie trat der NATO bei"
+      "1975",
+      "1947",
+      "1955",
+      "1962"
     ],
-    "note": "Die SED fürchtete um ihren Machtanspruch.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten/glasnost-und-perestroika.html",
-    "subject": "reform"
+    "note": "Die KSZE-Schlussakte von 1975 verband Sicherheitsfragen mit Zusagen zu Menschenrechten.",
+    "sourceLabel": "Deine Übersicht · Folie 23"
   },
   {
-    "id": "easy-cw-30",
+    "id": "easy-slides-v1-28",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Was sollte der „heiße Draht“ zwischen Washington und Moskau verbessern?",
+    "subject": "slides-24",
+    "q": "Wie hieß Reagans Raketenabwehrprogramm?",
     "answers": [
-      "Die Kommunikation in Krisen",
-      "Die Stromversorgung Berlins",
-      "Die Fernsehunterhaltung",
-      "Die Kontrolle aller Grenzen"
+      "SDI",
+      "SED",
+      "KSZE",
+      "ERP"
     ],
-    "note": "Die direkte Verbindung sollte gefährliche Missverständnisse verringern.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/kuba-krise.html",
-    "subject": "cuba"
+    "note": "SDI war das Raketenabwehrprogramm unter US-Präsident Ronald Reagan.",
+    "sourceLabel": "Deine Übersicht · Folie 24"
+  },
+  {
+    "id": "easy-slides-v1-29",
+    "cat": "coldwar",
+    "tier": 2,
+    "subject": "slides-26",
+    "q": "Wer kam 1985 in der Sowjetunion an die Macht?",
+    "answers": [
+      "Michail Gorbatschow",
+      "Lenin",
+      "Stalin",
+      "John F. Kennedy"
+    ],
+    "note": "1985 übernahm Michail Gorbatschow die Führung der Sowjetunion.",
+    "sourceLabel": "Deine Übersicht · Folie 26"
+  },
+  {
+    "id": "easy-slides-v1-30",
+    "cat": "coldwar",
+    "tier": 2,
+    "subject": "slides-27",
+    "q": "Welche Folge nennt die Übersicht für das Ende des Kalten Krieges?",
+    "answers": [
+      "Die Auflösung der Sowjetunion",
+      "Die Gründung des Zarenreichs",
+      "Den Beginn des Zweiten Weltkriegs",
+      "Die Gründung der Bolschewiki"
+    ],
+    "note": "Die Auflösung der Sowjetunion war eine zentrale Folge des Umbruchs am Ende des Kalten Krieges.",
+    "sourceLabel": "Deine Übersicht · Folie 27"
   }
 ];
-const HARD_BANK=[
+const HARD_BANK = [
   {
-    "id": "hard-cw-1",
+    "id": "hard-slides-v1-01",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Warum ergänzten sich Truman-Doktrin und Marshallplan?",
+    "subject": "slides-2",
+    "q": "Warum trug der Erste Weltkrieg zur Revolution in Russland bei?",
     "answers": [
-      "Politische Eindämmung wurde wirtschaftlich unterstützt",
-      "Beide verlangten die Auflösung der USA",
-      "Beide waren sowjetische Militärpläne",
-      "Beide verboten Wiederaufbauhilfe"
+      "Er verschärfte Not und Kritik am Zaren",
+      "Er beseitigte die soziale Ungleichheit",
+      "Er machte Russland zu einer Demokratie",
+      "Er beendete alle Versorgungskrisen"
     ],
-    "note": "Stabile Wirtschaft sollte Gesellschaften weniger anfällig für kommunistischen Einfluss machen.",
-    "source": "https://www.bpb.de/shop/zeitschriften/izpb/internationale-beziehungen-i-245/10328/ursachen-und-entstehung-des-kalten-krieges/",
-    "subject": "origins"
+    "note": "Kriegsverluste, Hunger und wirtschaftliche Not verstärkten die Unzufriedenheit und schwächten die Zarenherrschaft.",
+    "sourceLabel": "Deine Übersicht · Folie 2"
   },
   {
-    "id": "hard-cw-2",
+    "id": "hard-slides-v1-02",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Wie ist Schdanows Zwei-Lager-Theorie einzuordnen?",
+    "subject": "slides-2–3",
+    "q": "Welche Reihenfolge ist richtig?",
     "answers": [
-      "Als sowjetische ideologische Deutung des Konflikts",
-      "Als neutrale Weltkarte",
-      "Als NATO-Vertrag",
-      "Als Beweis weltweiter Demokratie"
+      "Abdankung des Zaren – Machtübernahme der Bolschewiki – Gründung der UdSSR",
+      "Gründung der UdSSR – Abdankung des Zaren – Oktoberrevolution",
+      "Oktoberrevolution – Gründung der UdSSR – Februarrevolution",
+      "Gründung der UdSSR – Oktoberrevolution – Abdankung des Zaren"
     ],
-    "note": "Die Theorie wertete das eigene Lager positiv und den Gegner negativ.",
-    "source": "https://www.bpb.de/shop/zeitschriften/izpb/internationale-beziehungen-i-245/10328/ursachen-und-entstehung-des-kalten-krieges/",
-    "subject": "origins"
+    "note": "Zuerst dankte der Zar im Februar 1917 ab. Im Oktober übernahmen die Bolschewiki; 1922 entstand die UdSSR.",
+    "sourceLabel": "Deine Übersicht · Folie 2–3"
   },
   {
-    "id": "hard-cw-3",
+    "id": "hard-slides-v1-03",
     "cat": "coldwar",
     "tier": 0,
-    "q": "Was meint „Lager“ in der Zwei-Lager-Theorie?",
+    "subject": "slides-2",
+    "q": "Was unterscheidet die Februar- von der Oktoberrevolution 1917?",
     "answers": [
-      "Politische Machtblöcke",
-      "Flüchtlingsunterkünfte",
+      "Erst endete die Zarenherrschaft, später übernahmen die Bolschewiki",
+      "Beide gründeten die NATO",
+      "Erst entstand die UdSSR, später das Zarenreich",
+      "Beide führten dieselbe Übergangsregierung ein"
+    ],
+    "note": "Die Februarrevolution beendete die Zarenherrschaft. Die Oktoberrevolution brachte die Bolschewiki an die Macht.",
+    "sourceLabel": "Deine Übersicht · Folie 2"
+  },
+  {
+    "id": "hard-slides-v1-04",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-8",
+    "q": "Was hatten die dargestellten Selbstbilder von USA und UdSSR gemeinsam?",
+    "answers": [
+      "Die Überzeugung von der Überlegenheit des eigenen Systems",
+      "Die Ablehnung jeder internationalen Rolle",
+      "Den Wunsch nach einer gemeinsamen Monarchie",
+      "Die Anerkennung des Gegners als Vorbild"
+    ],
+    "note": "Beide Seiten waren laut Übersicht stolz auf ihre Ordnung und hielten sie dem gegnerischen System für überlegen.",
+    "sourceLabel": "Deine Übersicht · Folie 8"
+  },
+  {
+    "id": "hard-slides-v1-05",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-7",
+    "q": "Wie ist die Aussage „Nur Sozialismus kann Frieden sichern“ einzuordnen?",
+    "answers": [
+      "Als ideologische Selbstdarstellung der sowjetischen Seite",
+      "Als neutrale Beschreibung aller Staaten",
+      "Als militärischer NATO-Vertrag",
+      "Als Beleg für fehlende Feindbilder"
+    ],
+    "note": "Die Aussage gibt eine sowjetische ideologische Sicht wieder. Sie ist kein neutrales Urteil über die Friedensfähigkeit politischer Systeme.",
+    "sourceLabel": "Deine Übersicht · Folie 7"
+  },
+  {
+    "id": "hard-slides-v1-06",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-7",
+    "q": "Was kennzeichnet ein Feindbild?",
+    "answers": [
+      "Dem Gegner werden pauschal bedrohliche Eigenschaften zugeschrieben",
+      "Alle Seiten werden gleich sorgfältig abgewogen",
+      "Nur überprüfbare Jahreszahlen werden genannt",
+      "Die eigene Sicht wird grundsätzlich verworfen"
+    ],
+    "note": "Feindbilder stellen die Gegenseite pauschal als gefährlich dar und lassen differenzierte Erklärungen in den Hintergrund treten.",
+    "sourceLabel": "Deine Übersicht · Folie 7"
+  },
+  {
+    "id": "hard-slides-v1-07",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-6",
+    "q": "Wie deutete die sowjetische Seite ihre militärische Stärke in den Quellen?",
+    "answers": [
+      "Als Beweis der Leistungsfähigkeit ihres Systems",
+      "Als Beweis für die Überlegenheit des Kapitalismus",
+      "Als Anlass zur Rückkehr zur Monarchie",
+      "Als Zeichen völliger politischer Neutralität"
+    ],
+    "note": "Die sowjetische Selbstdarstellung deutete militärische Stärke als Beleg für die Leistungsfähigkeit des Sozialismus.",
+    "sourceLabel": "Deine Übersicht · Folie 6"
+  },
+  {
+    "id": "hard-slides-v1-08",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-8",
+    "q": "Was meint das amerikanische „Sendungsbewusstsein“ in der Übersicht?",
+    "answers": [
+      "Die eigene Ordnung als weltweit richtungsweisend ansehen",
+      "Sich nur um Rundfunk kümmern",
+      "Auf Außenpolitik verzichten",
+      "Sowjetische Politik übernehmen"
+    ],
+    "note": "Sendungsbewusstsein bedeutet hier den Anspruch, mit der eigenen Ordnung ein Vorbild für andere Länder zu sein.",
+    "sourceLabel": "Deine Übersicht · Folie 8"
+  },
+  {
+    "id": "hard-slides-v1-09",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-10",
+    "q": "Warum ist der Begriff „Kalter Krieg“ umstritten?",
+    "answers": [
+      "Stellvertreterkriege verursachten reale Gewalt und viele Tote",
+      "Es gab keinerlei politische Spannungen",
+      "Der Konflikt fand ausschließlich im Winter statt",
+      "Beide Supermächte besaßen keine Armeen"
+    ],
+    "note": "Die Bezeichnung „kalt“ verdeckt, dass in Stellvertreterkriegen tatsächlich gekämpft wurde und Millionen Menschen starben.",
+    "sourceLabel": "Deine Übersicht · Folie 10"
+  },
+  {
+    "id": "hard-slides-v1-10",
+    "cat": "coldwar",
+    "tier": 0,
+    "subject": "slides-9–10",
+    "q": "Was kennzeichnet einen Stellvertreterkrieg im Ost-West-Konflikt?",
+    "answers": [
+      "Die Machtblöcke unterstützen gegnerische Seiten eines regionalen Kriegs",
+      "Beide Supermächte kämpfen immer direkt gegeneinander",
+      "Nur diplomatische Vertreter diskutieren",
+      "Regionale Interessen spielen grundsätzlich keine Rolle"
+    ],
+    "note": "In Stellvertreterkriegen unterstützten die Machtblöcke gegnerische regionale Akteure. Deren eigene Interessen blieben dennoch bedeutsam.",
+    "sourceLabel": "Deine Übersicht · Folie 9–10"
+  },
+  {
+    "id": "hard-slides-v1-11",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-11",
+    "q": "Warum ergänzte der Marshallplan die Truman-Doktrin?",
+    "answers": [
+      "Wirtschaftliche Stabilisierung unterstützte politische Eindämmung",
+      "Er ersetzte die USA durch die UdSSR",
+      "Er machte beide Systeme identisch",
+      "Er verbot den europäischen Wiederaufbau"
+    ],
+    "note": "Der Marshallplan sollte Armut und Instabilität verringern. Das unterstützte die Eindämmungspolitik der Truman-Doktrin.",
+    "sourceLabel": "Deine Übersicht · Folie 11"
+  },
+  {
+    "id": "hard-slides-v1-12",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-11",
+    "q": "Was bedeutet „Lager“ in Schdanows Theorie?",
+    "answers": [
+      "Politisch-ideologische Machtblöcke",
+      "Militärische Schlafplätze",
       "Warenlager",
-      "Militärische Schlafplätze"
+      "Flüchtlingsunterkünfte"
     ],
-    "note": "Gemeint sind Staaten und Kräfte mit gemeinsamer politischer Ausrichtung.",
-    "source": "https://www.bpb.de/shop/zeitschriften/izpb/internationale-beziehungen-i-245/10328/ursachen-und-entstehung-des-kalten-krieges/",
-    "subject": "origins"
+    "note": "Schdanows „Lager“ sind politisch-ideologische Machtblöcke unter amerikanischer beziehungsweise sowjetischer Führung.",
+    "sourceLabel": "Deine Übersicht · Folie 11"
   },
   {
-    "id": "hard-cw-4",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Wie stellte Schdanow das von den USA geführte Lager dar?",
-    "answers": [
-      "Als imperialistisch und antidemokratisch",
-      "Als kommunistisch und klassenlos",
-      "Als neutral und bündnisfrei",
-      "Als sowjetisch geführt"
-    ],
-    "note": "Das ist Schdanows propagandistische Bewertung, keine neutrale Beschreibung.",
-    "source": "https://www.bpb.de/shop/zeitschriften/izpb/internationale-beziehungen-i-245/10328/ursachen-und-entstehung-des-kalten-krieges/",
-    "subject": "origins"
-  },
-  {
-    "id": "hard-cw-5",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Warum ist „Marshallplan = reine Wohltätigkeit“ unvollständig?",
-    "answers": [
-      "Die Hilfe verfolgte auch politische und wirtschaftliche Interessen",
-      "Es wurden nur Waffen geliefert",
-      "Es gab keinerlei Wiederaufbauhilfe",
-      "Das Programm wurde von Stalin geleitet"
-    ],
-    "note": "Wiederaufbau und die Stärkung westlicher Bindungen gehörten zusammen.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre.html",
-    "subject": "after"
-  },
-  {
-    "id": "hard-cw-6",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Welche Entwicklung ging der Berlin-Blockade unmittelbar voraus?",
-    "answers": [
-      "Die Währungsreform in den Westzonen und Westsektoren",
-      "Der Mauerfall",
-      "Die Gründung des Warschauer Pakts",
-      "Die Kubakrise"
-    ],
-    "note": "Der Währungsstreit verschärfte den Konflikt um Berlin.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre/doppelte-staatsgruendung/berlin-blockade-1948.html",
-    "subject": "berlin"
-  },
-  {
-    "id": "hard-cw-7",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Warum war die Luftbrücke politisch bedeutsam?",
-    "answers": [
-      "Sie hielt die Westmächte in Berlin präsent, ohne die Blockade militärisch zu durchbrechen",
-      "Sie löste die DDR auf",
-      "Sie machte Berlin zur NATO-Hauptstadt",
-      "Sie beendete den Ost-West-Konflikt"
-    ],
-    "note": "Versorgung wurde zum Zeichen westlicher Entschlossenheit.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre/doppelte-staatsgruendung/berlin-blockade-1948.html",
-    "subject": "berlin"
-  },
-  {
-    "id": "hard-cw-8",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Welche Reihenfolge stimmt?",
-    "answers": [
-      "Berlin-Blockade – Mauerbau – Kubakrise",
-      "Kubakrise – Mauerbau – Berlin-Blockade",
-      "Mauerbau – Kubakrise – Berlin-Blockade",
-      "Berlin-Blockade – Kubakrise – Mauerbau"
-    ],
-    "note": "Die Ereignisse gehören zu 1948/49, 1961 und 1962.",
-    "source": "https://www.hdg.de/lemo/kapitel/nachkriegsjahre/doppelte-staatsgruendung/berlin-blockade-1948.html",
-    "subject": "berlin"
-  },
-  {
-    "id": "hard-cw-9",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Warum belastete die Fluchtbewegung die DDR-Wirtschaft?",
-    "answers": [
-      "Viele junge und qualifizierte Arbeitskräfte gingen verloren",
-      "Alle Betriebe wurden nach Kuba verlegt",
-      "Die DDR hatte keinen Außenhandel",
-      "Die Bevölkerung verdoppelte sich sofort"
-    ],
-    "note": "Abwanderung verschärfte wirtschaftliche und gesellschaftliche Probleme.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/mauerbau/flucht-und-notaufnahme.html",
-    "subject": "flight"
-  },
-  {
-    "id": "hard-cw-10",
-    "cat": "coldwar",
-    "tier": 0,
-    "q": "Wie ist die SED-Bezeichnung der Mauer als „antifaschistischer Schutzwall“ zu beurteilen?",
-    "answers": [
-      "Als Rechtfertigung, die das Verhindern der Flucht verdeckte",
-      "Als sachlich vollständige Erklärung",
-      "Als westdeutscher Gesetzestitel",
-      "Als Name eines NATO-Plans"
-    ],
-    "note": "Quellenbegriffe müssen auf ihre politische Funktion geprüft werden.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/mauerbau/13-august-1961-mauerbau.html",
-    "subject": "wall"
-  },
-  {
-    "id": "hard-cw-11",
+    "id": "hard-slides-v1-13",
     "cat": "coldwar",
     "tier": 1,
-    "q": "Welche Folge hatte der Mauerbau für den Alltag?",
+    "subject": "slides-11",
+    "q": "Wie bezeichnete Schdanow das amerikanisch geführte Lager?",
     "answers": [
-      "Familien, Verkehrswege und Arbeitsverbindungen wurden getrennt",
-      "Alle Reisebeschränkungen entfielen",
-      "Berlin wurde sofort wiedervereinigt",
-      "Ost und West erhielten dieselbe Regierung"
+      "Imperialistisch und antidemokratisch",
+      "Antiimperialistisch und demokratisch",
+      "Kommunistisch und klassenlos",
+      "Neutral und bündnisfrei"
     ],
-    "note": "Die Grenze griff unmittelbar in das Leben der Menschen ein.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/mauerbau/13-august-1961-mauerbau.html",
-    "subject": "wall"
+    "note": "Schdanow nannte das US-geführte Lager „imperialistisch“ und „antidemokratisch“. Das sind seine politischen Wertungen.",
+    "sourceLabel": "Deine Übersicht · Folie 11"
   },
   {
-    "id": "hard-cw-12",
+    "id": "hard-slides-v1-14",
     "cat": "coldwar",
     "tier": 1,
-    "q": "Warum bedrohten Raketen auf Kuba die USA besonders?",
+    "subject": "slides-11",
+    "q": "Warum muss man Schdanows Bezeichnungen kritisch lesen?",
     "answers": [
-      "Kuba liegt nahe am amerikanischen Festland",
-      "Kuba grenzt an Alaska",
-      "Kuba lag im Zentrum Europas",
-      "Kuba war damals ein US-Bundesstaat"
+      "Sie rechtfertigen die eigene Seite und werten den Gegner ab",
+      "Sie sind wertfreie geografische Begriffe",
+      "Sie beweisen demokratische Praxis in allen Ostblockstaaten",
+      "Sie stammen aus einem gemeinsamen neutralen Urteil"
     ],
-    "note": "Die Stationierung verschärfte die militärische Bedrohungslage.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/kuba-krise.html",
-    "subject": "cuba"
+    "note": "Die Zwei-Lager-Theorie stellt die eigene Seite positiv und den Gegner negativ dar. Ihre Begriffe müssen als politische Perspektive gelesen werden.",
+    "sourceLabel": "Deine Übersicht · Folie 11"
   },
   {
-    "id": "hard-cw-13",
+    "id": "hard-slides-v1-15",
     "cat": "coldwar",
     "tier": 1,
-    "q": "Was gehörte zur Beilegung der Kubakrise?",
+    "subject": "slides-12,15",
+    "q": "Welche Entwicklung verstärkte die deutsche Teilung?",
+    "answers": [
+      "Die Einbindung beider Staaten in gegnerische Blöcke",
+      "Ein gemeinsames Militärbündnis von BRD und DDR",
+      "Die Auflösung aller Besatzungszonen schon 1917",
+      "Die identische Wirtschaftspolitik beider Seiten"
+    ],
+    "note": "Die Bundesrepublik und die DDR wurden in gegnerische wirtschaftliche und militärische Blöcke eingebunden. Das verfestigte ihre Trennung.",
+    "sourceLabel": "Deine Übersicht · Folie 12,15"
+  },
+  {
+    "id": "hard-slides-v1-16",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-16",
+    "q": "Was meint das „Gleichgewicht des Schreckens“?",
+    "answers": [
+      "Die Furcht vor gegenseitiger atomarer Vernichtung",
+      "Die gleiche Einwohnerzahl beider Staaten",
+      "Eine Garantie, dass Atomwaffen harmlos sind",
+      "Die vollständige Abschaffung aller Raketen"
+    ],
+    "note": "Das Gleichgewicht des Schreckens beruht auf der Angst, durch einen Atomkrieg auch selbst vernichtet zu werden.",
+    "sourceLabel": "Deine Übersicht · Folie 16"
+  },
+  {
+    "id": "hard-slides-v1-17",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-16",
+    "q": "Warum versprach ein atomarer Erstschlag keinen sicheren Sieg?",
+    "answers": [
+      "Der Gegner konnte mit einem verheerenden Gegenschlag antworten",
+      "Atomwaffen wirkten nur über dem Meer",
+      "Die USA und UdSSR hatten keine Raketen",
+      "Der Angreifer war grundsätzlich unverwundbar"
+    ],
+    "note": "Ein Erstschlag konnte einen vernichtenden Gegenschlag auslösen. Deshalb gab es keine verlässliche Aussicht auf einen sicheren Sieg.",
+    "sourceLabel": "Deine Übersicht · Folie 16"
+  },
+  {
+    "id": "hard-slides-v1-18",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-18",
+    "q": "Wie beschränkte die Breschnew-Doktrin staatliche Souveränität?",
+    "answers": [
+      "Abweichungen vom sowjetischen Kurs konnten ein Eingreifen auslösen",
+      "Sie garantierte uneingeschränkte freie Bündniswahl",
+      "Sie verbot der UdSSR jedes Eingreifen",
+      "Sie übertrug alle Entscheidungen der UNO"
+    ],
+    "note": "Nach der Breschnew-Doktrin war die Selbstbestimmung sozialistischer Staaten dem Erhalt der sowjetisch geprägten Ordnung untergeordnet.",
+    "sourceLabel": "Deine Übersicht · Folie 18"
+  },
+  {
+    "id": "hard-slides-v1-19",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-17",
+    "q": "Welchen Zweck erfüllte Breschnews Darstellung des Westens nach 1968?",
+    "answers": [
+      "Sie rechtfertigte sowjetisches Eingreifen als Schutz des Sozialismus",
+      "Sie erklärte den Sozialismus für überflüssig",
+      "Sie forderte die Auflösung des Ostblocks",
+      "Sie lobte den Prager Frühling als Vorbild"
+    ],
+    "note": "Breschnew stellte den Westen als Bedrohung dar. Damit sollte das Eingreifen nach dem Prager Frühling als Schutz des Sozialismus erscheinen.",
+    "sourceLabel": "Deine Übersicht · Folie 17"
+  },
+  {
+    "id": "hard-slides-v1-20",
+    "cat": "coldwar",
+    "tier": 1,
+    "subject": "slides-19",
+    "q": "Warum ist die sowjetische NATO-Karikatur von 1949 einseitig?",
+    "answers": [
+      "Sie weist dem Westen die Schuld zu und blendet sowjetische Politik aus",
+      "Sie verzichtet auf jede politische Aussage",
+      "Sie beschreibt nur Mitgliederzahlen",
+      "Sie zeigt ausschließlich Zustimmung zur NATO"
+    ],
+    "note": "Die Folienanalyse zeigt: Die Karikatur macht allein den Westen verantwortlich und lässt etwa sowjetische Expansion und Berlin-Blockade außer Acht.",
+    "sourceLabel": "Deine Übersicht · Folie 19"
+  },
+  {
+    "id": "hard-slides-v1-21",
+    "cat": "coldwar",
+    "tier": 2,
+    "subject": "slides-20",
+    "q": "Was bedeutete die Domino-Theorie für die amerikanische Vietnampolitik?",
+    "answers": [
+      "Man befürchtete weitere kommunistische Machtübernahmen in der Region",
+      "Man erwartete die sofortige Auflösung der USA",
+      "Man hielt Vietnam für politisch bedeutungslos",
+      "Man wollte den Warschauer Pakt erweitern"
+    ],
+    "note": "Die Domino-Theorie unterstellte, dass ein kommunistischer Erfolg weitere Machtübernahmen in benachbarten Ländern begünstigen würde.",
+    "sourceLabel": "Deine Übersicht · Folie 20"
+  },
+  {
+    "id": "hard-slides-v1-22",
+    "cat": "coldwar",
+    "tier": 2,
+    "subject": "slides-20,23",
+    "q": "Warum war die Kubakrise besonders gefährlich?",
+    "answers": [
+      "Konfrontation und Atomwaffen drohten zu einem großen Krieg zu eskalieren",
+      "Kuba war Mitglied beider Militärblöcke",
+      "Es gab keine diplomatischen Kontakte mehr seit 1917",
+      "Alle Atomwaffen waren bereits abgeschafft"
+    ],
+    "note": "In der Kubakrise trafen die Interessen der Supermächte unmittelbar aufeinander. Die vorhandenen Atomwaffen machten eine Eskalation besonders gefährlich.",
+    "sourceLabel": "Deine Übersicht · Folie 20,23"
+  },
+  {
+    "id": "hard-slides-v1-23",
+    "cat": "coldwar",
+    "tier": 2,
+    "subject": "slides-20",
+    "q": "Welche Kombination gehörte zur Lösung der Kubakrise?",
     "answers": [
       "Sowjetischer Raketenabzug aus Kuba und amerikanischer aus der Türkei",
-      "Sofortige deutsche Einheit",
-      "Auflösung der UNO",
-      "Sowjetische Besetzung Washingtons"
+      "Teilung Japans und Gründung der NATO",
+      "Besetzung Moskaus und Auflösung Kubas",
+      "Vereinigung Koreas und Auflösung der UNO"
     ],
-    "note": "Die Einigung beruhte auf Zugeständnissen beider Seiten.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/kuba-krise.html",
-    "subject": "cuba"
+    "note": "Zur Verständigung gehörten der Abzug sowjetischer Raketen aus Kuba und amerikanischer Raketen aus der Türkei.",
+    "sourceLabel": "Deine Übersicht · Folie 20"
   },
   {
-    "id": "hard-cw-14",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Welche Lehre förderte die Kubakrise?",
-    "answers": [
-      "Krisenkommunikation und Verhandlungen sind lebenswichtig",
-      "Atomkrieg sei gefahrlos",
-      "Diplomatie sei grundsätzlich nutzlos",
-      "Wirtschaft ersetze jede Außenpolitik"
-    ],
-    "note": "Beide Seiten erkannten die Gefahr unkontrollierter Eskalation.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg/kuba-krise.html",
-    "subject": "cuba"
-  },
-  {
-    "id": "hard-cw-15",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Warum war die Bundesrepublik 1955 nicht neutral?",
-    "answers": [
-      "Sie trat dem westlichen Militärbündnis bei",
-      "Sie gehörte beiden Bündnissen gleichzeitig an",
-      "Sie war ein Teil der Sowjetunion",
-      "Sie hatte sämtliche Außenbeziehungen abgebrochen"
-    ],
-    "note": "Der NATO-Beitritt war ein zentraler Schritt der Westbindung.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/weg-nach-westen/militaerallianzen",
-    "subject": "nato"
-  },
-  {
-    "id": "hard-cw-16",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Was bedeutet die Beistandsidee eines Verteidigungsbündnisses?",
-    "answers": [
-      "Mitglieder unterstützen sich im Angriffsfall",
-      "Jedes Mitglied führt immer allein Krieg",
-      "Alle Mitglieder werden ein einziger Staat",
-      "Jeder Streit führt automatisch zum Atomkrieg"
-    ],
-    "note": "Beistand ist nicht mit einer automatischen atomaren Antwort gleichzusetzen.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/weg-nach-westen/militaerallianzen",
-    "subject": "nato"
-  },
-  {
-    "id": "hard-cw-17",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Warum bedeutete Entspannung nicht das Ende des Systemgegensatzes?",
-    "answers": [
-      "Zusammenarbeit war trotz verschiedener politischer Ordnungen möglich",
-      "Alle Staaten führten dieselbe Verfassung ein",
-      "Die Sowjetunion trat der NATO bei",
-      "Die DDR wurde 1972 aufgelöst"
-    ],
-    "note": "Annäherung sollte Konflikte beherrschbarer machen.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-modernisierung/neue-ostpolitik.html",
-    "subject": "ost"
-  },
-  {
-    "id": "hard-cw-18",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Was war ein Ziel der neuen Ostpolitik?",
-    "answers": [
-      "Kontakte und praktische Erleichterungen trotz Teilung",
-      "Sofortige Eroberung der DDR",
-      "Verbot aller Verhandlungen",
-      "Abbruch sämtlicher Beziehungen zu Polen"
-    ],
-    "note": "Die Politik setzte auf Vereinbarungen statt ausschließlicher Konfrontation.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-modernisierung/neue-ostpolitik.html",
-    "subject": "ost"
-  },
-  {
-    "id": "hard-cw-19",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Warum richteten Bundesrepublik und DDR Ständige Vertretungen ein?",
-    "answers": [
-      "Die Bundesrepublik vermied normale Botschaftsbeziehungen zwischen zwei ausländischen Staaten",
-      "Botschaften waren weltweit verboten",
-      "Es gab keine Hauptstädte",
-      "Beide Staaten waren bereits vereint"
-    ],
-    "note": "Die Bundesrepublik hielt an einer besonderen innerdeutschen Beziehung fest.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-modernisierung/neue-ostpolitik/grundlagenvertrag",
-    "subject": "treaty"
-  },
-  {
-    "id": "hard-cw-20",
-    "cat": "coldwar",
-    "tier": 1,
-    "q": "Was blieb für die Bundesrepublik trotz Grundlagenvertrag ein Ziel?",
-    "answers": [
-      "Die Wiedervereinigung",
-      "Die Abschaffung des Grundgesetzes",
-      "Der Beitritt zum Warschauer Pakt",
-      "Die Auflösung aller Länder"
-    ],
-    "note": "Geregelte Beziehungen bedeuteten keinen Verzicht auf die Einheit.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-modernisierung/neue-ostpolitik/grundlagenvertrag",
-    "subject": "treaty"
-  },
-  {
-    "id": "hard-cw-21",
+    "id": "hard-slides-v1-24",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Warum half die KSZE-Schlussakte oppositionellen Gruppen?",
+    "subject": "slides-23",
+    "q": "Worin liegt der Unterschied zwischen Rüstungsbegrenzung und Abrüstung?",
     "answers": [
-      "Sie konnten sich auf zugesagte Menschenrechte berufen",
-      "Sie erhielten automatisch Regierungsämter",
-      "Sie durfte nur im Westen gelesen werden",
-      "Sie verbot Kritik an Regierungen"
+      "Begrenzung setzt Schranken; Abrüstung baut Bestände ab",
+      "Beide bedeuten immer die Vernichtung aller Waffen",
+      "Begrenzung bedeutet unbegrenzte Aufrüstung",
+      "Abrüstung meint nur neue Waffentests"
     ],
-    "note": "Der Widerspruch zwischen Zusage und Wirklichkeit wurde politisch nutzbar.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-krisenmanagement/konfrontation-und-annaeherung/ksze.html",
-    "subject": "ksze"
+    "note": "Rüstungsbegrenzung setzt dem Ausbau Grenzen; Abrüstung verringert vorhandene Bestände. SALT I bedeutete keine vollständige Abrüstung.",
+    "sourceLabel": "Deine Übersicht · Folie 23"
   },
   {
-    "id": "hard-cw-22",
+    "id": "hard-slides-v1-25",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Welche Aussage über die KSZE-Schlussakte stimmt?",
+    "subject": "slides-23",
+    "q": "Welche Spannung enthielt die KSZE-Verständigung?",
     "answers": [
-      "Sie war eine politische Verpflichtung, keine automatische Garantie ihrer Umsetzung",
-      "Sie hob alle Grenzen auf",
-      "Sie vereinigte NATO und Warschauer Pakt",
-      "Sie schaffte die SED sofort ab"
+      "Nichteinmischung stand neben Zusagen zu Menschenrechten",
+      "Sie verbot gleichzeitig alle Verträge",
+      "Sie schaffte Grenzen und Staaten vollständig ab",
+      "Sie erlaubte nur einem Block die Teilnahme"
     ],
-    "note": "Die tatsächliche Einhaltung blieb umkämpft.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-krisenmanagement/konfrontation-und-annaeherung/ksze.html",
-    "subject": "ksze"
+    "note": "Die Zusage der Nichteinmischung stand neben der Verpflichtung zur Achtung von Menschenrechten. Deren Einforderung konnte Spannungen auslösen.",
+    "sourceLabel": "Deine Übersicht · Folie 23"
   },
   {
-    "id": "hard-cw-23",
+    "id": "hard-slides-v1-26",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Warum wollte Gorbatschow Reformen anstoßen?",
+    "subject": "slides-20,23–24",
+    "q": "Warum konnte Entspannung mit fortgesetztem Wettrüsten einhergehen?",
     "answers": [
-      "Er reagierte auf wirtschaftliche und gesellschaftliche Probleme",
-      "Er wollte die Monarchie zurückholen",
-      "Er wollte den Marshallplan 1947 verhindern",
-      "Er wollte die Berliner Blockade beginnen"
+      "Gespräche beseitigten Misstrauen und Sicherheitsinteressen nicht vollständig",
+      "Alle politischen Gegensätze waren schon verschwunden",
+      "Keine Seite besaß mehr Atomwaffen",
+      "Verhandlungen waren nur Sportveranstaltungen"
     ],
-    "note": "Sein Reformprojekt sollte das sozialistische System zunächst erneuern.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten/glasnost-und-perestroika.html",
-    "subject": "reform"
+    "note": "Verhandlungen konnten Krisen entschärfen, während Misstrauen, Systemkonkurrenz und Sicherheitsinteressen fortbestanden.",
+    "sourceLabel": "Deine Übersicht · Folie 20,23–24"
   },
   {
-    "id": "hard-cw-24",
+    "id": "hard-slides-v1-27",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Was bewirkte die Gründung des Warschauer Pakts 1955?",
+    "subject": "slides-24",
+    "q": "Was zeigt die erneute Anspannung Ende der 1970er Jahre?",
     "answers": [
-      "Sie festigte die militärische Blockbildung in Europa",
-      "Sie machte alle Mitgliedstaaten bündnisfrei",
-      "Sie vereinigte beide deutschen Staaten",
-      "Sie löste die NATO auf"
+      "Entspannung war umkehrbar",
+      "SALT I hatte alle Waffen beseitigt",
+      "Die Blöcke existierten seit 1975 nicht mehr",
+      "Der Kalte Krieg begann erst 1983"
     ],
-    "note": "Die UdSSR sicherte damit auch ihren Einfluss auf ihre Verbündeten.",
-    "source": "https://www.bpb.de/kurz-knapp/lexika/das-junge-politik-lexikon/321391/warschauer-pakt/",
-    "subject": "pact"
+    "note": "Neue Raketenstationierungen und erneute Aufrüstung zeigen, dass Entspannung keine unumkehrbare Entwicklung war.",
+    "sourceLabel": "Deine Übersicht · Folie 24"
   },
   {
-    "id": "hard-cw-25",
+    "id": "hard-slides-v1-28",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Warum war der Abbau der ungarisch-österreichischen Grenzsperren 1989 wichtig?",
+    "subject": "slides-26",
+    "q": "Welcher Zusammenhang erklärt Gorbatschows Reformdruck?",
     "answers": [
-      "Er eröffnete DDR-Bürgern neue Fluchtmöglichkeiten",
-      "Er vereinigte Österreich und Ungarn",
-      "Er beendete den Koreakrieg",
-      "Er schuf die Berliner Mauer"
+      "Wirtschaftliche Probleme und Unzufriedenheit verlangten Veränderungen",
+      "Die Zarenfamilie verlangte eine neue Krönung",
+      "Die Sowjetunion hatte keinerlei innere Probleme",
+      "Die NATO bestimmte unmittelbar die sowjetische Regierung"
     ],
-    "note": "Flucht über andere Staaten verstärkte den Druck auf die DDR.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten.html",
-    "subject": "change"
+    "note": "Wirtschaftliche Schwierigkeiten und Unzufriedenheit erhöhten den Druck auf Gorbatschow, Veränderungen einzuleiten.",
+    "sourceLabel": "Deine Übersicht · Folie 26"
   },
   {
-    "id": "hard-cw-26",
+    "id": "hard-slides-v1-29",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Was unterscheidet Maueröffnung und Wiedervereinigung?",
+    "subject": "slides-27",
+    "q": "Warum war das Ende des Ostblocks für seine Staaten bedeutsam?",
     "answers": [
-      "Grenzöffnung und staatliche Vereinigung sind verschiedene Schritte",
-      "Beides geschah am selben Tag",
-      "Die Einheit fand vor dem Mauerbau statt",
-      "Die Maueröffnung schaffte alle Staaten ab"
+      "Es eröffnete mehr Freiheit und Selbstbestimmung",
+      "Es stellte überall die Zarenherrschaft wieder her",
+      "Es machte alle Staaten zu US-Bundesstaaten",
+      "Es beseitigte jede nationale Regierung"
     ],
-    "note": "Zwischen der Öffnung 1989 und der Einheit 1990 lagen politische Verhandlungen.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit",
-    "subject": "end"
+    "note": "Das Ende sowjetischer Vorherrschaft eröffnete den Ostblockstaaten größere Freiheit und politische Selbstbestimmung.",
+    "sourceLabel": "Deine Übersicht · Folie 27"
   },
   {
-    "id": "hard-cw-27",
+    "id": "hard-slides-v1-30",
     "cat": "coldwar",
     "tier": 2,
-    "q": "Welche Rolle spielte die freie Volkskammerwahl 1990?",
+    "subject": "slides-27",
+    "q": "Was änderte sich an der internationalen Machtstruktur nach dem Zerfall der UdSSR?",
     "answers": [
-      "Ihr Ergebnis stärkte den Weg zur deutschen Einheit",
-      "Sie gründete die NATO",
-      "Sie verlängerte Stalins Herrschaft",
-      "Sie führte erstmals die Mauer ein"
+      "Die USA blieben als alleinige weltweit operierende Supermacht zurück",
+      "Es gab sofort zwei neue identische Blöcke",
+      "Die NATO wurde zur sowjetischen Partei",
+      "Die UdSSR wurde militärisch stärker als zuvor"
     ],
-    "note": "Demokratische Entscheidungen prägten den weiteren Einigungsprozess.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/weg-zur-einheit",
-    "subject": "end"
-  },
-  {
-    "id": "hard-cw-28",
-    "cat": "coldwar",
-    "tier": 2,
-    "q": "Warum ist „Gorbatschow allein verursachte die Wende“ zu einfach?",
-    "answers": [
-      "Reformen, Proteste, Flucht und strukturelle Probleme wirkten zusammen",
-      "In der DDR gab es keine Proteste",
-      "Die Wirtschaft spielte keine Rolle",
-      "Alle Veränderungen wurden 1949 beschlossen"
-    ],
-    "note": "Historische Umbrüche haben meist mehrere Ursachen und Akteure.",
-    "source": "https://www.hdg.de/lemo/kapitel/deutsche-einheit/wandel-im-osten.html",
-    "subject": "change"
-  },
-  {
-    "id": "hard-cw-29",
-    "cat": "coldwar",
-    "tier": 2,
-    "q": "Was zeigt die neue Konfrontation um 1980?",
-    "answers": [
-      "Entspannung war kein unumkehrbarer Prozess",
-      "Der Kalte Krieg war bereits 1975 vollständig beendet",
-      "Beide Bündnisse existierten nicht mehr",
-      "Alle Atomwaffen waren abgeschafft"
-    ],
-    "note": "Afghanistan, Polen und Rüstungspolitik verschärften die Spannungen erneut.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-krisenmanagement/konfrontation-und-annaeherung.html",
-    "subject": "confrontation"
-  },
-  {
-    "id": "hard-cw-30",
-    "cat": "coldwar",
-    "tier": 2,
-    "q": "Was zeigt der sowjetische Satellitenstart 1957 über den Kalten Krieg?",
-    "answers": [
-      "Der Wettbewerb betraf auch Technik und Prestige",
-      "Er war ausschließlich ein Landkrieg",
-      "Wissenschaft spielte keine Rolle",
-      "Beide Blöcke betrieben keine Propaganda"
-    ],
-    "note": "Erfolge im Weltraum dienten auch als Zeichen der Systemstärke.",
-    "source": "https://www.hdg.de/lemo/kapitel/geteiltes-deutschland-gruenderjahre/kalter-krieg.html",
-    "subject": "war"
+    "note": "Mit dem Zerfall der UdSSR endete die bisherige bipolare Machtordnung. Die USA blieben als einzige weltweit operierende Supermacht zurück.",
+    "sourceLabel": "Deine Übersicht · Folie 27"
   }
 ];

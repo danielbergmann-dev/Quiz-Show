@@ -1,12 +1,12 @@
 # Kalter Krieg · Klasse 10
 
-Eigenständige Lernversion der Quizshow für die Sekundarstufe I (Gymnasium, Klasse 10), ohne Bindung an einen bestimmten Landeslehrplan.
+Lernversion zur bereitgestellten Unterrichtspräsentation „Übersicht Kalter Krieg“ (PDF-Export). 60 eigenständig formulierte Fragen: 30 leicht, 30 schwer. Die Fragen ersetzen den bisherigen allgemeinen Pool.
 
-60 Fragen: 30 leicht, 30 schwer. Pro Runde 15 Fragen, drei Joker und zwei Sicherheitsstufen. Schwere Fragen prüfen Ursachen, Zusammenhänge und historische Einordnung. Erklärungen und Quellenlinks werden nach jeder Antwort angezeigt. Publikum und Telefon sind simuliert und können falsch liegen.
+Themen: Russische Revolution, Ideologien und Feindbilder, Blockbildung, Wettrüsten, Korea, Kuba, Vietnam, Entspannung und Ende des Kalten Krieges. Schwere Fragen prüfen Ursachen, Zusammenhänge und Einordnung. Ungenaue Folienangaben werden nicht als richtige Lernantworten übernommen.
 
-Ungespielte Fragen werden im jeweiligen Schwierigkeitsgrad bevorzugt. Der Verlauf wird nur im aktuellen Browser gespeichert; getrennt vom Fanquiz. Alle Gewinne sind Spielgeld.
+Nach jeder Antwort erscheinen eine Erklärung und die zugehörige Foliennummer (PDF-Seite). Die Originaldatei wird nicht veröffentlicht.
 
-Quellen: Bundeszentrale für politische Bildung sowie LeMO der Stiftung Haus der Geschichte. Fragen und Antwortmöglichkeiten wurden eigenständig formuliert. Quellen pro Frage über „Nachlesen“.
+Pro Runde 15 Fragen, drei Joker und zwei Sicherheitsstufen. Publikum und Telefon sind simuliert und können falsch liegen. Gewinne sind Spielgeld. Ungespielte Fragen werden bevorzugt; der Verlauf wird im jeweiligen Browser getrennt vom Fanquiz gespeichert.
 
 Öffnen: https://danielbergmann-dev.github.io/Quiz-Show/kalter-krieg/
 
